@@ -1,0 +1,541 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+<!-- ======= Hero Section ======= -->
+   <section id="hero" class="d-flex flex-column justify-content-end align-items-center">
+       <div id="heroCarousel" data-bs-interval="5000" class="container carousel carousel-fade" data-bs-ride="carousel">
+
+           <!-- Slide 1 -->
+           <div class="carousel-item active">
+               <div class="carousel-container">
+                   <h2 class="">Welcome to Auction Boys</h2>
+                   <p class="">And to the future of buying and selling property; This is the exciting new way to sell and buy property. Your dream home or investment property awaits you with a little property research nd a couple of well timed clicks. Let our team help you through the process in making your best buy decision yet.</p>
+                   <!-- <a href="#contact" class="btn-get-started scrollto">Our Newsletter</a> -->
+               </div>
+           </div>
+
+
+
+       </div>
+
+       <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
+     <defs>
+       <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z">
+     </defs>
+     <g class="wave1">
+       <use xlink:href="#wave-path" x="50" y="3" fill="rgba(255,255,255, .1)">
+     </g>
+     <g class="wave2">
+       <use xlink:href="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)">
+     </g>
+     <g class="wave3">
+       <use xlink:href="#wave-path" x="50" y="9" fill="#fff">
+     </g>
+   </svg>
+
+   </section>
+   <!-- End Hero -->
+
+   <main id="main">
+
+
+
+
+
+       <!-- ======= Pricing Section ======= -->
+       <section id="pricing" class="pricing">
+           <div class="container">
+
+               <div class="section-title" data-aos="zoom-out">
+                   <h2>Services</h2>
+                   <p>The Process</p>
+               </div>
+
+               <div class="row">
+
+                   <div class="col-lg-3 col-md-6">
+                       <div class="box" data-aos="zoom-in">
+
+                           <h3><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-house-door" viewBox="0 0 16 16">
+ <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z"/>
+</svg></i>
+                           </h3>
+                           <h4>Apply</h4>
+                           <ul>
+                               <li>Send us your details and we'll get back to you ASAP.</li>
+                               <li>Once your account has been approved you will get full access to all of our features.</li>
+                               <li></li>
+                           </ul>
+                           <div class="btn-wrap">
+                               <a href="#contact" class="btn-buy scrollto">Apply</a>
+                           </div>
+                       </div>
+                   </div>
+
+                   <div class="col-lg-3 col-md-6 mt-4 mt-md-0">
+                       <div class="box featured" data-aos="zoom-in" data-aos-delay="100">
+                           <h3><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-wallet2" viewBox="0 0 16 16">
+ <path d="M12.136.326A1.5 1.5 0 0 1 14 1.78V3h.5A1.5 1.5 0 0 1 16 4.5v9a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 13.5v-9a1.5 1.5 0 0 1 1.432-1.499L12.136.326zM5.562 3H13V1.78a.5.5 0 0 0-.621-.484L5.562 3zM1.5 4a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-13z"/>
+</svg></h3>
+                           <h4>Sell your property</h4>
+                           <ul>
+                               <li>Sell your property in just 3 weeks.</li>
+                               <li></li>
+                               <li></li>
+                               <li></li>
+
+                           </ul>
+                           <div class="btn-wrap">
+                               <a href="#contact" class="btn-buy scrollto">Sell</a>
+                           </div>
+                       </div>
+                   </div>
+
+                   <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
+                       <div class="box" data-aos="zoom-in" data-aos-delay="200">
+                           <h3><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
+ <path fill-rule="evenodd" d="M8 3.293l6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+ <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+</svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
+ <path fill-rule="evenodd" d="M8 3.293l6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+ <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+</svg></h3>
+                           <h4>Browse Opportunities</h4>
+                           <ul>
+                               <li>Browse our variety of commercial or residential properties. With prices ranging from R600k up to R10m</li>
+                               <li></li>
+                           </ul>
+                           <div class="btn-wrap">
+                               <a href="/apartments/" class="btn-buy">Browse</a>
+                           </div>
+                       </div>
+                   </div>
+
+                   <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
+                       <div class="box" data-aos="zoom-in" data-aos-delay="300">
+
+                           <h3><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-card-checklist" viewBox="0 0 16 16">
+ <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z"/>
+ <path d="M7 5.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0zM7 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0z"/>
+</svg></h3>
+                           <h4>Sale Day</h4>
+                           <ul>
+                               <li>Once biddding opens, all registered parties can start placing bids.</li>
+                               <li>It's completely transparent - all of the bidds will appear in real-time, on the relevant property page.</li>
+                           </ul>
+                           <div class="btn-wrap">
+                               <a href="{% url 'guide' %}" class="btn-buy">More</a>
+                           </div>
+                       </div>
+                   </div>
+
+               </div>
+
+           </div>
+       </section>
+       <!-- End Pricing Section -->
+
+
+       <!-- ======= Cta Section ======= -->
+       <section id="cta" class="cta">
+           <div class="container">
+
+               <div class="row" data-aos="zoom-out">
+                   <div class="col-lg-9 text-center text-lg-start">
+                       <h3>Register to Auction with us :)</h3>
+                       <p>Your account has to be registered and verified in order to take part in our Auctions.</p>
+                   </div>
+                   <div class="col-lg-3 cta-btn-container text-center">
+                       <a class="cta-btn align-middle scrollto" href="#contact">Apply To Bid</a>
+                   </div>
+               </div>
+
+           </div>
+       </section>
+       <!-- End Cta Section -->
+
+       <!-- ======= Services Section ======= -->
+       <section id="services" class="services">
+           <div class="container">
+
+               <div class="section-title" data-aos="zoom-out">
+                   <h2>More about us</h2>
+                   <p>Why Auction?</p>
+               </div>
+
+               <div class="row">
+                   <div class="col-lg-4 col-md-6">
+                       <div class="icon-box">
+                           <div class="icon"><i class="bi bi-clock" style="color: #4680ff;"></i></div>
+                           <h4 class="title">Sell your property quickly at market value.</h4>
+                           <p class="description">Our competitive atmosphere often allows for even higher bids on your property.</p>
+                       </div>
+                   </div>
+                   <div class="col-lg-4 col-md-6 mt-5 mt-md-0">
+                       <div class="icon-box" data-aos-delay="100">
+                           <div class="icon"><i class="bi bi-book" style="color: #e9bf06;"></i></div>
+                           <h4 class="title">Bid online from anywhere.</h4>
+                           <p class="description">Bid online from the comfort of your home or office.</p>
+                       </div>
+                   </div>
+
+                   <div class="col-lg-4 col-md-6 mt-5 mt-lg-0 ">
+                       <div class="icon-box" data-aos-delay="200">
+                           <div class="icon"><i class="bi bi-bag-check-fill" style="color: #3fcdc7;"></i></div>
+                           <h4 class="title">Certainty that a buyer won't bail on you.</h4>
+                           <p class="description">Know exactly when your property will sell.</p>
+                       </div>
+                   </div>
+                   <div class="col-lg-4 col-md-6 mt-5 ">
+                       <div class="icon-box" data-aos-delay="300">
+                           <div class="icon"><i class="bi bi-binoculars" style="color:#41cf2e;"></i></div>
+                           <h4 class="title">Find your home.</h4>
+                           <p class="description">Find your location home from anywhere in the world.</p>
+                       </div>
+                   </div>
+
+                   <div class="col-lg-4 col-md-6 mt-5">
+                       <div class="icon-box" data-aos-delay="400">
+                           <div class="icon"><i class="bi bi-globe" style="color: #451e3e ;"></i></div>
+                           <h4 class="title">Seemless online auctions.</h4>
+                           <p class="description">We allow you to bid on your favourite properties from the comfort of your home or office.</p>
+                       </div>
+                   </div>
+                   <div class="col-lg-4 col-md-6 mt-5">
+                       <div class="icon-box" data-aos-delay="500">
+                           <div class="icon"><i class="bi bi-briefcase" style="color: #ff689b;"></i></div>
+                           <h4 class="title">Everybody wins.</h4>
+                           <p class="description">Our auctions attract only serious buyers.</p>
+                       </div>
+                   </div>
+               </div>
+
+           </div>
+       </section>
+       <!-- End Services Section -->
+
+       <!-- ======= Portfolio Section ======= -->
+       <section id="portfolio" class="portfolio">
+           <div class="container slower">
+
+               <div class="section-title" data-aos="zoom-out">
+                   <h2>What we've done</h2>
+                   <p>Recently Sold Properties</p>
+               </div>
+
+
+               <div class="ms-1 row portfolio-container justify-content-center">
+
+
+                   <div class="col-lg-4 col-md-4 portfolio-item filter-car align-self-end  p-3 mb-5 bg-body rounded">
+                       <div class="portfolio-img "><span class="advanced">SOLD</span><img src="{% static  '/img/nice4.jpg' %}" class="img-fluid"></div>
+
+                       <div class="portfolio-info">
+                           <h4>R 7.2m</h4>
+                           <p>13 Jacques Avenue, Uitsigpark</p>
+                           <a href="{% static  '/img/portfolio/portfolio-4.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 2"><i class=""></i></a>
+                           <!-- <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> -->
+                           <a href="portfolio-details.html" class="" title="More Details"><i class=""></i></a>
+                       </div>
+                   </div></a>
+
+                   <div class="col-lg-4 col-md-4 portfolio-item filter-card align-self-end  p-3 mb-5 bg-body rounded">
+                       <div class="portfolio-img"><span class="advanced">SOLD</span><img src="{% static  '/img/meh2.jpg' %}" class="img-fluid"></div>
+
+                       <div class="portfolio-info">
+                           <h4>R 15.4m</h4>
+                           <p>2 Fagotstreet, Newtown</p>
+                           <a href="{% static  '/img/portfolio/portfolio-7.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 1"><i class=""></i></a>
+                           <a href="portfolio-details.html" class="details-link" title="More Details"><i class=""></i></a>
+                       </div>
+                   </div>
+
+                   <div class="col-lg-4 col-md-4 portfolio-item filter-car align-self-end  p-3 mb-5 bg-body rounded">  
+                       <div class="portfolio-img"><span class="advanced">SOLD</span><img src="{% static  '/img/meh5.jpg' %}" class="img-fluid"></div>
+
+                       <div class="portfolio-info">
+                           <h4>R 9.5m</h4>
+                           <p>88 Main str, Gugulethot</p>
+                           <a href="{% static  '/img/portfolio/portfolio-8.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 3"><i class=""></i></a>
+                           <a href="portfolio-details.html" class="details-link" title="More Details"><i class=""></i></a>
+                       </div>
+                   </div>
+
+
+
+               </div>
+
+           </div>
+       </section>
+       <!-- End Portfolio Section -->
+
+
+
+
+       <section id="cta" class="cta">
+           <div class="container">
+
+               <div class="row" data-aos="zoom-out">
+                   <div class="col-lg-9 text-center text-lg-start" id='countdown'>
+                       <h3>Auction ends in:</h3>
+                       <p><span id="days-"></span> DAYS</p>
+                       <p><span id="hours-"></span> HOURS</p>
+                       <p><span id="minutes-"></span> MINUTES</p>
+                       <p><span id="seconds-"></span> SECONDS</p>
+
+
+                   </div>
+                   <div class="col-lg-3 cta-btn-container text-center">
+                       <!-- <a class="cta-btn " href="#contact">Alert me</a> -->
+                       {% if request.user.is_authenticated %}
+                        <a href="{% url 'guide' %}" class="cta-btn scrollto">BID NOW</a>
+                        
+                                {% else %}
+                                <a href="#contact" class="cta-btn scrollto">BID NOW</a>
+                                
+                                {% endif %}
+                       <!-- <a href="#contact" class="cta-btn scrollto">BID NOW</a> -->
+                   </div>
+               </div>
+
+           </div>
+       </section>
+
+
+       <!-- ======= F.A.Q Section ======= -->
+       <section id="faq" class="faq">
+           <div class="container">
+
+               <div class="section-title" data-aos="zoom-out">
+                   <h2>F.A.Q</h2>
+                   <p>Frequently Asked Questions</p>
+               </div>
+
+               <ul class="faq-list">
+
+                   <li>
+                       <div data-bs-toggle="collapse" class="collapsed question" href="#faq1">Why Auctions? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+                       <div id="faq1" class="collapse" data-bs-parent=".faq-list">
+                           <p>
+                               Auctions are exciting, a far better way to sell your property than the current available methods. Its quick, your property can be sold in 30 days or less. The auction platform is also the only platform where you will be able to get more money for your property than you expected because you put a reserve on the value of the property with the assistance of your Business Development Manager. Auctions work with motivated buyers and sellers and provide the market with true market value of a property at that given time.
+                           </p>
+                       </div>
+                   </li>
+
+                   <li>
+                       <div data-bs-toggle="collapse" href="#faq2" class="collapsed question">Why Online? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+                       <div id="faq2" class="collapse" data-bs-parent=".faq-list">
+                           <p>
+                               Online auctions opens up your buyers to anyone in the world who is looking to buy. It also allows you to bid from anywhere in the world or the country you may be in so you don’t lose out on an a property you wanted because you not available to attend an auction.                            </p>
+                       </div>
+                   </li>
+
+                   <li>
+                       <div data-bs-toggle="collapse" href="#faq3" class="collapsed question">Am I protected when I buy on Auction? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+                       <div id="faq3" class="collapse" data-bs-parent=".faq-list">
+                           <p>
+                               All companies selling property (real estate)in South Africa need to be registered with the EAAB (Estate Agency Affairs Board) who are the regulator and such have to be in possession of a current Fidelity Fund certificate. While there is an industry body called SAIA (South African Institute of Auctioneers), Auction Boys does not belong to them. This does not mean Auction Boys is an illegal auctioneer, we choose not to belong to a body that cannot regulate. Auction Boys was established in 2005 all our auction comply with the Consumer Protection Act of 2008.                            </p>
+                       </div>
+                   </li>
+
+                   <li>
+                       <div data-bs-toggle="collapse" href="#faq4" class="collapsed question">Can Buyers make offer before the Auction? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+                       <div id="faq4" class="collapse" data-bs-parent=".faq-list">
+                           <p>
+                               Absolutely, auction is a sale method and nothing else, while the prevailing sales method is private treaty, auctions offer the market another option to sell. Both sellers and buyers want the same thing, “A quick sale at the best price”.                        </div>
+                   </li>
+
+                   <li>
+                       <div data-bs-toggle="collapse" href="#faq5" class="collapsed question"> What do I need to Bid at an Auction? Registration and Deposit <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+                       <div id="faq5" class="collapse" data-bs-parent=".faq-list">
+                           <p>
+                               In order to bid on auction, you need to be registered with your FICA documents (ID & Proof of Residence), and approved. Approved basically means that we have gotten a pre-approval for you to buy meaning you will be able to afford the property. You will need to pay a deposit which may vary according to the value of the property you bidding on. The deposit is fully refundable should you not be  successful.                         </div>
+                   </li>
+
+                   <li>
+                       <div data-bs-toggle="collapse" href="#faq6" class="collapsed question"> Default Auction <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+                       <div id="faq6" class="collapse" data-bs-parent=".faq-list">
+                           <p>
+                               Should you bid on auction and win the property but are not able to perform, pay for the property, it is known as a default sale. The seller, in terms of the Auction Rules, will now take legal action against you, the auctioneer can on the sellers instructions, re-auction the property at your, the defaulting parties cost, and take whatever bid they get, you the defaulting party now being liable and responsible for the difference between the default bid and the new bid received do. Our strongest advice is to get prequalified and know you can afford to buy, this is another reason why we qualify you, we don’t want to put you, our sellers, and ourselves in that situation. 
+                           </p>
+                       </div>
+                   </li>
+
+                   <li>
+                       <div data-bs-toggle="collapse" href="#faq6" class="collapsed question"> Reserve and Guide Prices <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+                       <div id="faq6" class="collapse" data-bs-parent=".faq-list">
+                           <p>
+                               Everything in life has a value, opinions on the value of the asset differs and that is the basis of an auction, most property sold on auction is sold with a reserve price, there are instances where there is no reserve and this is known as an absolute action. Examples are Sheriffs auctions, insolvent estate auctions, liquidation sales.                     
+                               <p>
+                               </div>
+                   <li>
+                       <div data-bs-toggle="collapse" href="#faq7" class="collapsed question">Voetstoets, “As Is Sale”<i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+                       <div id="faq7" class="collapse" data-bs-parent=".faq-list">
+                           <p>
+                               Auctions are “voetstoets” sales, which means as is, as you see the property when you buy, that is what you buy. The seller has no obligation to you after the sale. This is why it is important to work with reputable auction houses and auctioneers and also to do your homework properly. By way of example, a Sheriffs auction, the buyer is responsible for all arrear rates and taxes and municipal accounts on the property, while you may buy a bargain, you may be hit with a large bill.   </p>
+                           </div>                  
+
+                   <li>
+                       <div data-bs-toggle="collapse" href="#faq8" class="collapsed question"> Sold Subject To Confirmation (STC) <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+                       <div id="faq8" class="collapse" data-bs-parent=".faq-list">
+                           <p>
+                               All property is sold on auction, where the reserve price is not reached, it is sold STC (Subject to Confirmation). The seller will have 5 business days to accept of decline the offer. During the conformation period you are bound to your offer and may not retract or withdraw your offer. </p>
+                           </div>                   
+
+                   <li>
+                       <div data-bs-toggle="collapse" href="#faq9" class="collapsed question"> What do I need to Bid at an Auction? Registration and Deposit <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+                       <div id="faq9" class="collapse" data-bs-parent=".faq-list">
+                           <p>
+                               In order to bid on auction, you need to be registered with your FICA documents (ID & Proof of Residence), and approved. Approved basically means that we have gotten a pre-approval for you to buy meaning you will be able to afford the property. You will need to pay a deposit which may vary according to the value of the property you bidding on. The deposit is fully refundable should you not be  successful.                         </p>
+                           </div>
+                   </li>
+
+                   <li>
+                       <div data-bs-toggle="collapse" href="#faq10" class="collapsed question">Ownership, Risk and Transfer <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+                       <div id="faq10" class="collapse" data-bs-parent=".faq-list">
+                           <p>
+                               The auction rule will determine the terms and conditions of the sale, generally possession and risk is transferred to the buyer on registration of transfer in the buyers name at the deeds office. There are instances where the risk and ownership will be transferred on the fall of the hammer, be sure you understand and read the Auction Rules.                   
+                           </p>
+                       </div>
+                   <li>
+                       <div data-bs-toggle="collapse" href="#faq11" class="collapsed question">How Can I Stay Informed on Future Auctions? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+                       <div id="faq11" class="collapse" data-bs-parent=".faq-list">
+                           <p>
+                               Be sure to Subscribe  to our newsletter and give us permission to send you updates. <a href='#contact' class="cta-btn scrollto">CLICK HERE!</a>
+                           </p>
+                       </div>
+                           
+                           
+                   </li>
+
+                   
+
+               </ul>
+
+           </div>
+       </section>
+       <!-- End F.A.Q Section -->
+
+
+
+       <!-- ======= Contact Section ======= -->
+       <section id="contact" class="contact">
+           <div class="container">
+         
+               <div class="section-title" data-aos="zoom-out">
+                   <h2>Instructions</h2>
+                   <p>Contact us to Bid</p>
+               </div>
+
+               
+         
+                <!-- Slide 1 -->
+                
+                    
+                        <p class=""><b>Contact us via Email or Call us and we'll guide you through the application process.</b></p>
+                        <!-- <a href="#contact" class="btn-get-started scrollto">Our Newsletter</a> -->
+                    
+                        <section></section>
+     
+     
+        
+                 
+               <div class="row gy-4">
+              
+         
+                   <!-- <div class="col-lg-12" data-aos="fade-right"> -->
+
+                     <!-- <div class="info"> -->
+
+                    
+
+                        <div class='col-lg-4'>
+                       <div class="address info">
+                           <i class="bi bi-person"></i>
+                            <h4>Derek Fox</h4>
+                            <p>AUCTION BOYS SPECIALIST</p>
+                       </div>
+                    </div>
+         
+                    <div class='col-lg-4'>
+                       <div class="email info">
+                           <i class="bi bi-envelope"></i>
+                           <h4>Email</h4>
+                           <p>help@auction-boys.co.za</p>
+                       </div>
+                    </div>
+         
+                    <div class='col-lg-4'>
+                       <div class="phone info">
+                           <i class="bi bi-phone"></i>
+                           <h4>Call</h4>
+                           
+                           <p>Derek Fox: 082 886 0651</p>
+                       </div>
+                    </div>
+                       
+                       
+         
+                   <!-- </div> -->
+         
+                   <!-- </div> -->
+               
+         
+                   <!-- <div class="col-lg-8 mt-5 mt-lg-0" data-aos="fade-left"> -->
+         
+                     <!-- <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                         <div class="row">
+                          <p>Fill in your details below and we'll be in touch.</p>
+                             <div class="col-md-2 form-group">
+                                 <input type="text" name="name" class="form-control" id="name" placeholder="Name" required>
+                             </div>
+                             <div class="col-md-2 form-group">
+                               <input type="text" name="name" class="form-control" id="name" placeholder="Surname" required>
+                           </div>
+                             <div class="col-md-4 form-group mt-3 mt-md-0">
+                                 <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
+                             </div>
+                             <div class="col-md-4 form-group mt-3 mt-md-0">
+                               <input type="location" class="form-control" name="location" id="location" placeholder="Location" required>
+                           </div>
+                         </div>
+                         <div class="form-group mt-3">
+                             <textarea class="form-control" name="message" rows="6" placeholder="Message (Optional)" ></textarea>
+                         </div>
+                         <div class="my-3">
+                             <div class="loading">Loading</div>
+                             <div class="error-message"></div>
+                             <div class="sent-message">Your message has been sent. Thank you!</div>
+                         </div>
+                         <div class="text-center"><button type="submit">Submit</button></div>
+                     </form> -->
+         
+                   <!-- </div> -->
+         
+               </div>
+               <!-- <section></section> -->
+
+               
+
+               <!-- <div class='col-lg-3'>
+                <div class="info">
+                    <h4></h4>
+                    <p>1. Contact us for information regarding your registration process.</p>
+                    <p></p>
+                    <p>2. Wait for us to come back to you with your Sign In credentials.</p>
+                </div>
+            </div> -->
+         
+           </div>
+         </section>
+       <!-- End Contact Section -->
+
+   </main>
+   <!-- End #main -->
+   
+   <script>meh();</script>
+
+   
+{% endblock %}

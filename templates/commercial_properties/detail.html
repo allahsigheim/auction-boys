@@ -1,0 +1,602 @@
+{% extends 'base.html' %}
+
+ {% load static %}
+ 
+ {% block content %}
+
+ <section id="hero" class="d-flex flex-column justify-content-end align-items-center">
+        <div id="heroCarousel" data-bs-interval="5000" class="container carousel carousel-fade" data-bs-ride="carousel">
+
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+                <div class="carousel-container-2 hero-image">
+                    <h2 class="animate__animated animate__fadeInDown"><span></span></h2>
+                    <p class="animate__animated fanimate__adeInUp"></p>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+    </section>
+
+
+      <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <!-- <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Property Details</h2> -->
+          <!-- <ol>
+            <li><a href="index.html">Home</a></li>
+            <li>Property Details</li>
+          </ol> -->
+        <!-- </div>
+
+      </div>
+    </section>End Breadcrumbs -->
+
+    <!-- ======= Portfolio Details Section ======= -->
+
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
+
+
+        <div class="row gy-4">
+            <div class="col-lg-12">
+      
+              <section id="pricing" class="pricing-1">
+                <div class="container">
+      
+                  <div class="row">
+      
+                      <div class="col-lg-12">
+                          <div class="box-1" data-aos="zoom-in">
+      
+                            <h4>DEMO Property, Wentworth Crescent, {{ house.town_or_city }}</h4>
+                              <h4><span>BIDDING DEPOSIT REQUIRED: R 2 000, END DATE: 03/04/2021 20:35:20</span></h4>
+                              
+                              <!-- <ul>
+                                  <li>BEGIN PRICE: R 500 000</li>   
+                              </ul> -->
+                              <div class="btn-wrap-1">
+                                <a href="#contact" class="btn-buy scrollto">RESERVE YOUR SPOT</a>
+                            </div>
+                          </div>
+                      </div>
+              </section>
+
+              <!-- <div class="col-lg-12">
+                <div class="portfolio-details-slider swiper-container">
+                  <div class="swiper-wrapper align-items-center">
+                    {% for h in house.extra_images_house_set.all %}
+                        <div class="swiper-slide">
+                            <img src="{{ h.img.url }}" alt="Girl in a jacket">
+                        </div>
+                    {% endfor %} 
+                
+    
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div> -->
+      
+            </div>
+        </div>
+        <div class="row gy-4">
+            <div class="col-lg-8">
+                <div class='row'>
+
+                    <div class="col-lg-12">
+                        <div class="portfolio-details-slider swiper-container">
+                            <div class="swiper-wrapper align-items-center">
+                              {% for com in coms.extra_images_commercial_set.all %}
+                              <div class="swiper-slide">
+                                <img class='itemopp4' src="{{ com.img.url }}" alt="Girl in a jacket">
+                              </div>
+                              {% endfor %} 
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-12">
+                        
+                    
+
+
+                        
+
+                        <!-- <div class="portfolio-info">
+                            
+                            <section id="pricing" class="pricing-2">
+                                <div class="container">
+                      
+                                  <div class="row">
+                      
+                                      <div class="col-lg-12">
+                                        <div class="box-1" data-aos="zoom-in">
+                                        <div class='row'>
+                                            
+                                            <div class='col-lg-4'>
+                                              <div class="info">
+                                                
+                    
+                                                <div class="email">
+                                                    <i class="bi bi-envelope"></i>
+                                                    <h4>Email:</h4>
+                                                    <p>derek@auction-boys.co.za</p>
+                                                </div>
+                    
+                                                
+                                                    
+                                            </div>
+                                            </div>
+                                            <div class='col-lg-4'>
+                                              <div class="info">
+                                                
+                    
+                                                <div class="phone">
+                                                    <i class="bi bi-phone"></i>
+                                                    <h4>Call:</h4>
+                                                    <p>082 886 0651</p>
+                                                </div>
+                                                    
+                                            </div>
+                                            </div>
+                                            <div class='col-lg-4'>
+                                                <div class="info">
+                                                  
+                      
+                                                  <div class="email">
+                                                      <i class="bi bi-envelope"></i>
+                                                      <h4>Ebarl:</h4>
+                                                      <p>yesa</p>
+                                                  </div>
+                      
+                                                  
+                                                      
+                                              </div>
+                                              </div>
+
+
+
+                                          
+                                          </div>
+                                          </div>
+        
+                   
+                  
+                                      </div>
+                            </section>
+                            
+                            
+                        </div> -->
+                        
+                    </div>
+
+                </div>
+            </div>
+        
+
+              
+
+            <div class="col-lg-4">
+                
+                
+                <div class="portfolio-info">
+                    <h3>AUCTION STARTS IN:</h3>
+                    <h4>0 DAYS 0 HOURS 1 MIN 48 SEC</h4>
+                    
+                    <h3>OPENING BID:</h3>
+                    <h4>R 2 500 000</h4>
+
+                    <!-- <h3>Auction Starts In:</h3> -->
+
+
+                    <h3>PROPERTY INFORMATION:</h3>
+                    <ul>
+                      <li><strong>PROPERTY TYPE</strong>: Residential</li>
+                      <li><strong>PROPERTY ADDRESS</strong>: {{ house.town_or_city }}</li>
+                      <li><strong>AUCTION DATE</strong>: 2021-03-14</li>
+                      <li><strong>AUCTION START TIME</strong>: 11:00</li>
+                      <!-- <li><strong>Description:</strong></li>
+                      <li>- {{ house.bedrooms }} Bedrooms, {{ house.bath_rooms }} Bathrooms, {{ house.garages }} Garages</li>
+                      <li>-  <b>&#13217;</b>: {{ house.under_roof_sqm }}</li> -->
+                      <!-- <li>- {{ house.levis }} levis</li> -->
+                      <!-- <li>- Security: {{ house.security }}</li> -->
+                      <!-- <li>- Laundry: {{ house.laundry }}</li> -->
+                      <!-- <li>- Outside Space: {{ house.outside_space }}</li>
+                      <li>- Fibre: {{ house. }}</li>
+                      <li>- {{ house. }}</li>
+                      <li>- {{ house. }}</li> -->
+                      
+                    </ul>
+                    
+                    <!-- <h3>AGENT ENQUIRIES:</h3> -->
+
+                    
+                    
+                    <section id="pricing" class="pricing-2">
+                        <div class="container">
+              
+                         
+
+
+
+                                  <div class="box-1" data-aos="zoom-in">
+                                    
+                                     
+                                    
+                                      
+                                       <ul><li><h4><span>AUCTION TUTORIAL:</span></h4></li></ul>
+                                        
+                                      
+                                     
+                                  
+                                  <div class="btn-wrap-5">
+                                    <a href="#" class="btn-buy-5"><i class="bi bi-play-btn-fill"> Guide</i></a>
+                                    
+                                    
+                                  </div>
+
+                                  <!-- <section id="pricing" class="pricing-2">
+                                    <div class="btn-wrap-1">
+                                        <a href="#contact" class="btn-buy scrollto">CONTACT US</a>
+                                    </div>
+                                    </section> -->
+          
+                                  </div>
+           
+          
+                              </div>
+                      </section>
+                    
+                    <!-- <section id="pricing" class="pricing-2">
+                        <div class="container">
+              
+                          <div class="row">
+              
+                              <div class="col-lg-12">
+                                <div class="box-1" data-aos="zoom-in">
+                                <div class='row'>
+                                    
+                                    <div class='col-lg-6'>
+                                      <div class="info">
+                                        
+            
+                                        <div class="email">
+                                            <i class="bi bi-envelope"></i>
+                                            <h4>Email:</h4>
+                                            <p>derek@auction-boys.co.za</p>
+                                        </div>
+            
+                                        
+                                            
+                                    </div>
+                                    </div>
+                                    <div class='col-lg-6'>
+                                      <div class="info">
+                                        
+            
+                                        <div class="phone">
+                                            <i class="bi bi-phone"></i>
+                                            <h4>Call:</h4>
+                                            <p>082 886 0651</p>
+                                        </div>
+                                            
+                                    </div>
+                                    </div>
+                                  
+                                  </div>
+                                  </div>
+
+
+
+                                  <div class="box-1" data-aos="zoom-in">
+                                    
+                                     
+                                    
+                                      
+                                       <ul><li><h4><span>AUCTION TUTORIAL:</span></h4></li></ul>
+                                        
+                                      
+                                     
+                                  
+                                  <div class="btn-wrap-5">
+                                    <a href="#" class="btn-buy-5"><i class="bi bi-play-btn-fill"> Guide</i></a>
+                                    
+                                    
+                                  </div>
+          
+                                  </div>
+           
+          
+                              </div>
+                      </section> -->
+      
+      
+                  </div>
+
+              </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Details Section -->
+
+   <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
+        <div class="portfolio-info">
+
+
+
+          <div class='row-gy-4'>
+            <div class='col-lg-8'>
+              <h3>Property Summary</h3>
+                <li>This sale will be SUBJECT TO CONFIRMATION by the parties involved</li>
+                <li>4 Bedroom family home with a 60m2 flatlet</li>
+                <li>Erf nr 10359 Strand</li>
+                <li>Erf extent 660m2</li>
+            </div>
+
+            
+          </div>
+          
+
+
+        <h3>Tenure</h3>
+        <p>Vacant</p>
+
+        <h3>Location</h3>
+        <li>Erf 10359 Goede Hoop Strand</li>
+        <li>Close to Somerset Mall, The Sanctuary, Primary and High Schools</li>
+        <li>Busamed Hospital</li>
+        <li>Very close to Boland College (300m).</li>
+
+        <h3>Description</h3>
+        <li>A residential property comprises the main house, one apartment and one games room/private home office (each with a separate entrance)</li>
+        <li>Master bedroom with en-suite full bathroom.</li>
+        <li>Three other bedrooms</li>
+        <li>Separate full bathroom</li>
+        <li>Formal lounge</li>
+        <li>Large open-plan living room/dining room/kitchen/utility area</li>
+        <li>APARTMENT UPSTAIRS:</li>
+        <li>Store room</li>
+        <li>TV Lounge</li>
+        <li>Kitchen</li>
+        <li>Bedroom with en-suite full bathroom</li>
+        <li>GAMES ROOM/HOME OFFICE:</li>
+        <li>Boardroom</li>
+        <li>Large open-plan office</li>
+        <li>Kitchenette</li>
+        <li>Toilet</li>
+        <li>It can easily be converted into a separate apartment with minor changes.</li>
+        <li>Double garage (36m2) with under-cover parking for up to two small cars.</li>
+        <li>Both apartments can possibly be rented out for additional income.</li>
+        <li>All rooms are extremely spacious.</li>
+        <li>Property is securely fenced in.</li>
+        <li><b>Buyers Commission of 5% plus VAT will be applicable</b></li>
+        <li><b>Please note: All legal documents can be viewed by clicking on the ‘Legals’ tab above, in order for you to carry out due diligence in relation to the property. By doing so, this will also then ensure that you are continuously updated regarding any pricing changes on the property before the auction.</b></li>
+
+        <h3>Zoning</h3>
+        <p>Single residential</p>
+
+        <h3>VAT</h3>
+        <p>Please refer to documents.</p>
+
+        <p></p>
+        <p>No information, statement, description, quantity or measurement contained in any sales particulars or given orally or contained in any webpage, brochure, catalogue, email, letter, report, docket or hand out issued by or on behalf of Auction Boys or the vendor in respect of the property shall constitute a representation or a condition or a warranty on behalf of Auction Boys or the vendor. Any information, statement, description, quantity or measurement so given or contained in any such sales particulars, webpage, brochure, catalogue, email, letter, report or hand out issued by or on behalf of Auction Boys or the vendor are for illustration purposes only and are not to be taken as matters of fact. Any mistake, omission, inaccuracy or mis-description given orally or contained in any sales particulars, webpage, brochure, catalogue, email, letter, report or hand out issued by or on behalf of Auction Boys or the vendor shall not give rise to any right of action, claim, entitlement or compensation against Auction Boys or the vendor. All bidders must satisfy themselves by carrying out their own independent due diligence, inspections or otherwise as to the correctness of any and all of the information, statements, descriptions, quantity or measurements contained in any such sales particulars, webpage, brochure, catalogue, email, letter, report or hand out issued by or on behalf of Auction Boys or the vendor.</p>
+
+        </div>
+      </div>
+    </section>
+     <!-- ======= Contact Section ======= -->
+        <!-- <section id="contact" class="contact">
+            <div class="container">
+
+                <div class="section-title" data-aos="zoom-out">
+                    <h2>Contact</h2>
+                    <p>Enquire Now</p>
+                </div>
+                  
+                <div class="row mt-5">
+               
+
+                    <div class="col-lg-4" data-aos="fade-right">
+                        <div class="info">
+                            <div class="address">
+                                <i class="bi bi-person"></i>
+                                    {% for a in agents %}
+                                        
+                                        {% if house.agent_email|stringformat:'s' == a.email|stringformat:'s' %}
+                                        <h4>{{ a.first_name }}</h4>
+                                        {% elif forloop.last %}
+                                    
+                                
+                                <p><b>PROPERTY SPECIALIST</b></p>
+                                
+                                
+                            
+
+                            <div class="email">
+                                <i class="bi bi-envelope"></i>
+                                <h4>Email:</h4>
+                                <p>{{ a.email }}</p>
+                            </div>
+
+                            <div class="phone">
+                                <i class="bi bi-phone"></i>
+                                <h4>Call:</h4>
+                                <p>M: {{ a.phone }}</p>
+                                <p>T: 011 268 2681</p>
+                            </div>
+                            {% endif %}
+                            {% endfor %}
+
+                        </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-8 mt-5 mt-lg-0" data-aos="fade-left">
+
+                        <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                            <div class="row">
+                             <p>Fill in your details below and we'll be in touch.</p>
+                                <div class="col-md-6 form-group">
+                                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                                </div>
+                                <div class="col-md-6 form-group mt-3 mt-md-0">
+                                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                                </div>
+                            </div>
+                            <div class="form-group mt-3">
+                                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                            </div>
+                            <div class="form-group mt-3">
+                                <textarea class="form-control" name="message" rows="3" placeholder="Message" required></textarea>
+                            </div>
+                            <div class="my-3">
+                                <div class="loading">Loading</div>
+                                <div class="error-message"></div>
+                                <div class="sent-message">Your message has been sent. Thank you!</div>
+                            </div>
+                            <div class="text-center"><button type="submit">Submit</button></div>
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section> -->
+        <!-- End Contact Section -->
+
+
+<!-- <h1>{{ house.agent_email }}</h1> -->
+
+<!-- ======= Contact Section ======= -->
+<section id="contact" class="contact">
+  <div class="container">
+
+      <div class="section-title" data-aos="zoom-out">
+          <h2>Contact</h2>
+          <p>Enquire Now</p>
+      </div>
+        
+      <div class="row mt-5">
+     
+
+          <div class="col-lg-4" data-aos="fade-right">
+            <div class="info">
+              <div class="address">
+                  <i class="bi bi-person"></i>
+                  {% for a in agents %}
+                          
+                  {% if houses.agent_email|stringformat:'s' == a.email|stringformat:'s' %}
+                  {% elif forloop.last %}
+                  <h4>{{ a.first_name }} {{ a.last_name }}</h4>
+                  
+                  <p><b>PROPERTY SPECIALIST</b></p>
+          
+          
+      </div>
+
+      <div class="email">
+          <i class="bi bi-envelope"></i>
+          <h4>Email:</h4>
+          <p>{{ a.email }}</p>
+      </div>
+
+      <div class="phone">
+          <i class="bi bi-phone"></i>
+          <h4>Call:</h4>
+          <p>Agent: {{ a.phone }}</p>
+          <p>Auction Boys: 011 268 2681</p>
+      </div>
+      {% endif %}
+      {% endfor %}
+
+          </div>
+
+          </div>
+      
+
+          <div class="col-lg-8 mt-5 mt-lg-0" data-aos="fade-left">
+
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+               <p>Fill in your details below and we'll be in touch.</p>
+                  <div class="col-md-4 form-group">
+                      <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                  </div>
+                  <div class="col-md-4 form-group mt-3 mt-md-0">
+                      <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                  </div>
+                  <div class="col-md-4 form-group mt-3 mt-md-0">
+                    <input type="text" class="form-control" name="email" id="email" placeholder="Your Location" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject (Optional)" required>
+              </div>
+              <div class="form-group mt-3">
+                  <textarea class="form-control" name="message" rows="3" placeholder="Message (Optional)" required></textarea>
+              </div>
+              <div class="my-3">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Submit</button></div>
+          </form>
+
+          </div>
+
+      </div>
+
+  </div>
+</section>
+<!-- End Contact Section -->
+
+<!-- <h1>{{ apartment.agent_email }}</h1>
+{% for a in agents %}
+{% if apartment.agent_email|stringformat:'s' == a.email|stringformat:'s' %}
+
+  <h1> This is {{ a.first_name }}'s listing</h1>
+{% elif forloop.last %}
+{% endif %}
+{% endfor %}  -->
+
+  </main><!-- End #main -->
+
+
+    <!-- {% comment %} MAIN IMAGE_____________________ {% endcomment %}
+    {% comment %} <img src="{{ apartment.main_image.url }}" alt="Girl in a jacket" width="500" height="600"> {% endcomment %}
+
+
+    {% comment %} {% for ap in apartment.extra_images_apartment_set.all %}
+        <img src="{{ ap.img.url }}" alt="Girl in a jacket" width="500" height="600">
+    {% endfor %} 
+
+    {% for a in agents %}
+        {% if apartment.agent_email|stringformat:'s' == a.email|stringformat:'s' %}
+      
+            <h1> This is {{ a.first_name }}'s listing</h1>
+        {% elif forloop.last %}
+        {% endif %}
+    {% endfor %} {% endcomment %} -->
+
+
+
+{% endblock %}
+
+                 
+            

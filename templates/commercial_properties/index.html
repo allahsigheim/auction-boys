@@ -1,0 +1,160 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+{% comment %} HTML STARTS HERE------------------------- {% endcomment %}
+
+<section id="hero" class="d-flex flex-column justify-content-end align-items-center">
+       <div id="heroCarousel" data-bs-interval="5000" class="container carousel carousel-fade" data-bs-ride="carousel">
+
+           <!-- Slide 1 -->
+           <div class="carousel-item active">
+               <div class="carousel-container-1 hero-image">
+                   <h2 class=""><span>Commercial Properties</span></h2>
+                   <p class="">Don’t miss the opportunity to find your perfect offices. Sign up to our weekly newsletter to see what properties are going on auction.</p>
+                   <a href="#features" class="btn-get-started scrollto">View Listings</a>
+               </div>
+           </div>
+
+
+
+       </div>
+
+       <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
+     <defs>
+       <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z">
+     </defs>
+     <g class="wave1">
+       <use xlink:href="#wave-path" x="50" y="3" fill="rgba(255,255,255, .1)">
+     </g>
+     <g class="wave2">
+       <use xlink:href="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)">
+     </g>
+     <g class="wave3">
+       <use xlink:href="#wave-path" x="50" y="9" fill="#fff">
+     </g>
+   </svg>
+
+   </section>
+{% comment %} <section id="services" class="services">
+     <div class="container">
+
+       <div class="section-title" data-aos="zoom-out">
+         <h2>Apartments / Flats</h2>
+         <p>Next in line</p>
+       </div>
+
+       <div class="row">
+         <div class="col-lg-4 col-md-6 mt-5 mt-lg-0">
+           <div class="icon-box" >
+             <div class="icon"><i style="color: #4680ff;"></i></div>
+             <div class="portfolio-img">
+                   <div id='itembru' class="portfolio-img"><span class="advanced">Commercial</span><img src="{% static  '/img/portfolio/portfolio-4.jpg' %}" class="img-fluid itembru"></img></div>
+                <div class="portfolio-info">
+                   <h4 class="title"><a>Guguletho - 88 Main str</a></h4>
+                   <p class="description">AUCTION DATE: <b>05-04-2021</b></p>
+                   <p class="description">AUCTION START TIME: <b>17:00</b></p>
+                   
+                   <a href="assets/img/commer1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Guguletho - 88 Main Rd"><i class="bx bx-plus"></i></a>
+                   <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+               </div>
+               
+               
+             </div>
+           </div>
+           
+         </div>
+         <div class="col-lg-4 col-md-6 mt-5 mt-lg-0">
+           <div class="icon-box" data-aos-delay="100">
+             <div class="icon"><i  style="color: #e9bf06;"></i></div>
+             <div  class="portfolio-img "><span class="advanced">Residential</span><img src="{% static  '/img/portfolio/portfolio-4.jpg' %}" class="img-fluid itembru"></img></div>
+               <h4 class="title"><a>Guguletho - 88 Main str</a></h4>
+               <p class="description">AUCTION DATE: <b>05-04-2021</b></p>
+               <p class="description">AUCTION START TIME: <b>17:00</b></p>
+
+               <a href="{% static  '/img/portfolio/portfolio-4.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Guguletho - 88 Main Rd"><i class="bx bx-plus"></i></a>
+                   <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+           </div>
+         </div>
+
+         <div class="col-lg-4 col-md-6 mt-5 mt-lg-0 ">
+           <div class="icon-box" data-aos-delay="200">
+             <div class="icon"><i style="color: #3fcdc7;"></i></div>
+             <div class="portfolio-img "><span class="advanced">Residential</span><img src="{% static  '/img/portfolio/portfolio-4.jpg' %}" class="img-fluid itembru"></img></div>
+             
+             <h4 class="title"><a>Guguletho - 88 Main str</a></h4>
+             <p class="description">AUCTION DATE: <b>05-04-2021</b></p>
+             <p class="description">AUCTION START TIME: <b>17:00</b></p>
+
+             <a href="{% static  '/img/portfolio/portfolio-4.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Guguletho - 88 Main Rd"><i class="bx bx-plus"></i></a>
+                   <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+           </div>
+         </div>
+
+     </div>
+   </section><!-- End Services Section --> {% endcomment %}
+
+   
+
+
+   
+
+   {% for com in coms %}
+
+   <section id="features" class="features">
+     <a href="/commercial_properties/{{ com.id }}/">
+       <div id="portfolio-details" class="container portfolio-details portfolio-item">
+       <div class="tab-content" data-aos="fade-up">
+         <div class="tab-pane active show" id="tab-1">
+         
+           <div class="row">
+             
+             <div class="portfolio-info">
+               <div class='row gy-4'>
+             <div class="col-lg-6 ">
+             <!-- <div class="portfolio info"> -->
+               <div class='row gy-4'>
+                 <div class="col-lg-8 ">
+
+                   <h3><b class='section-title'> {{ com.town_or_city }}, {{ com.province }}, {{ com.business_or_retail }} </b></h3>
+               <ul>
+
+                 <li><strong>SPECIFICATIONS:</strong> {{ com.offices }} Offices, {{ com.board_rooms }} Boardrooms, {{ com.toilets }} Toilets</li>
+                 <li><strong>AUCTION DATE:</strong> {{com.auction_date.date}}</b></li>
+                 <li><strong>AUCTION START TIME:</strong> {{com.auction_date.time}}</li>
+                 <li><strong>START PRICE:</strong> R {{ com.start_price }}</li>
+                 
+               </ul>
+               <!-- <h3><b>Auction Starts in:</b></h3>
+               <p class="font-italic"><b><span id="days-{{ ap.id }}"></span></b> DAYS <b><span id="hours-{{ ap.id }}"></span></b> HOURS <b><span id="minutes-{{ ap.id }}"></span></b> MINUTES <b><span id="seconds-{{ ap.id }}"></span></b> SECONDS</p> -->
+               
+             </div>
+             <div class="col-lg-4 ">
+               <h3><b>Auction Starts in:</b></h3>
+               <p class="font-italic"><b><span id="days-{{ com.id }}"></span></b> DAYS</p>
+               <p class="font-italic"><b><span id="hours-{{ com.id }}"></span></b> HOURS</p>
+               <p class="font-italic"><b><span id="minutes-{{ com.id }}"></span></b> MINUTES</p>
+               <p class="font-italic"><b><span id="seconds-{{ com.id }}"></span></b> SECONDS</p>
+               
+             </div>
+                 </div>
+                 <h3></h3>
+             </div>
+             <div class="col-lg-6 order-1 text-right">
+               <img src="{{ com.main_image.url }}" class="img-fluid itemopp7 item-box"></img>
+             </div>
+           </div>
+             </div>
+             </div>
+           </div>
+         </div>
+       </div>
+     </a>
+   </section>
+   
+   <script>meh("{{ com.id }}", "{{ com.id }}", "{{ com.id }}", "{{ com.id }}")</script>
+{% endfor %} 
+
+{% comment %} HTML ENDS HERE------------------------- {% endcomment %}
+{% endblock %}

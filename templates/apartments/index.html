@@ -1,0 +1,272 @@
+ {% extends 'base.html' %}
+
+ {% load static %}
+ 
+ {% block content %}
+{% comment %} HTML STARTS HERE------------------------- {% endcomment %}
+
+<section id="hero" class="d-flex flex-column justify-content-end align-items-center">
+        <div id="heroCarousel" data-bs-interval="5000" class="container carousel carousel-fade" data-bs-ride="carousel">
+
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+                <div class="carousel-container-1 hero-image">
+                    <h2 class=""><span>Upcoming Auctions</span></h2>
+                    <p class="">Here's your opportunity to stay ahead of the curve and the trend, get our weekly newsletter for buying and selling tips, suggestions and latest information on what's happening in the auction world. We're here to help you find your ideal Property.</p>
+                    <!-- <a href="#features" class="btn-get-started scrollto">View Listings</a> -->
+                </div>
+            </div>mki,l9
+
+
+
+        </div>
+
+        <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
+      <defs>
+        <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z">
+      </defs>
+      <g class="wave1">
+        <use xlink:href="#wave-path" x="50" y="3" fill="rgba(255,255,255, .1)">
+      </g>
+      <g class="wave2">
+        <use xlink:href="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)">
+      </g>
+      <g class="wave3">
+        <use xlink:href="#wave-path" x="50" y="9" fill="#fff">
+      </g>
+    </svg>
+
+    </section>
+{% comment %} <section id="services" class="services">
+      <div class="container">
+
+        <div class="section-title" data-aos="zoom-out">
+          <h2>Apartments / Flats</h2>
+          <p>Next in line</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mt-5 mt-lg-0">
+            <div class="icon-box" >
+              <div class="icon"><i style="color: #4680ff;"></i></div>
+              <div class="portfolio-img">
+                    <div id='itembru' class="portfolio-img"><span class="advanced">Commercial</span><img src="{% static  '/img/portfolio/portfolio-4.jpg' %}" class="img-fluid itembru"></img></div>
+                 <div class="portfolio-info">
+                    <h4 class="title"><a>Guguletho - 88 Main str</a></h4>
+                    <p class="description">AUCTION DATE: <b>05-04-2021</b></p>
+                    <p class="description">AUCTION START TIME: <b>17:00</b></p>
+                    
+                    <a href="assets/img/commer1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Guguletho - 88 Main Rd"><i class="bx bx-plus"></i></a>
+                    <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+                
+                
+              </div>
+            </div>
+            
+          </div>
+          <div class="col-lg-4 col-md-6 mt-5 mt-lg-0">
+            <div class="icon-box" data-aos-delay="100">
+              <div class="icon"><i  style="color: #e9bf06;"></i></div>
+              <div  class="portfolio-img "><span class="advanced">Residential</span><img src="{% static  '/img/portfolio/portfolio-4.jpg' %}" class="img-fluid itembru"></img></div>
+                <h4 class="title"><a>Guguletho - 88 Main str</a></h4>
+                <p class="description">AUCTION DATE: <b>05-04-2021</b></p>
+                <p class="description">AUCTION START TIME: <b>17:00</b></p>
+
+                <a href="{% static  '/img/portfolio/portfolio-4.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Guguletho - 88 Main Rd"><i class="bx bx-plus"></i></a>
+                    <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mt-5 mt-lg-0 ">
+            <div class="icon-box" data-aos-delay="200">
+              <div class="icon"><i style="color: #3fcdc7;"></i></div>
+              <div class="portfolio-img "><span class="advanced">Residential</span><img src="{% static  '/img/portfolio/portfolio-4.jpg' %}" class="img-fluid itembru"></img></div>
+              
+              <h4 class="title"><a>Guguletho - 88 Main str</a></h4>
+              <p class="description">AUCTION DATE: <b>05-04-2021</b></p>
+              <p class="description">AUCTION START TIME: <b>17:00</b></p>
+
+              <a href="{% static  '/img/portfolio/portfolio-4.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Guguletho - 88 Main Rd"><i class="bx bx-plus"></i></a>
+                    <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+      </div>
+    </section><!-- End Services Section --> {% endcomment %}
+
+    
+
+
+    
+
+{% for ap in apartments %}
+
+    <section id="features" class="features">
+      <a href="/apartments/{{ ap.id }}/">
+        <div id="portfolio-details" class="container portfolio-details portfolio-item">
+        <div class="tab-content" data-aos="fade-up">
+          <div class="tab-pane active show" id="tab-1">
+          
+            <div class="row">
+              
+              <div class="portfolio-info">
+                <div class='row gy-4'>
+              <div class="col-lg-6 ">
+              <!-- <div class="portfolio info"> -->
+                <div class='row gy-4'>
+                  <div class="col-lg-8 ">
+
+                    <h3><b class='section-title'> {{ ap.street_address }}, {{ ap.town_or_city }} </b></h3>
+                <ul>
+
+                  
+                  <li><strong>PROPERTY TYPE:</strong> {{ ap.property_type }} </b></li>
+                  <li><strong>PROPERTY OFFERS:</strong> {{ ap.bedrooms }} Bedrooms, {{ ap.bath_rooms }} Bathrooms</li>
+                  <li class='boet'><strong>AUCTION END DATE:</strong> {{ap.auction_date.date}}</li>
+                  <li><strong>CURRENT BID:</strong> R {{ ap.start_price }}</li>
+                  
+                </ul>
+                <!-- <h3><b>Auction Starts in:</b></h3>
+                <p class="font-italic"><b><span id="days-{{ ap.id }}"></span></b> DAYS <b><span id="hours-{{ ap.id }}"></span></b> HOURS <b><span id="minutes-{{ ap.id }}"></span></b> MINUTES <b><span id="seconds-{{ ap.id }}"></span></b> SECONDS</p> -->
+                
+              </div>
+              <div class="col-lg-4 ">
+                <h3><b>Auction Ends in:</b></h3>
+                <p class="font-italic"><b><span id="days-{{ ap.id }}"></span></b> DAYS</p>
+                <p class="font-italic"><b><span id="hours-{{ ap.id }}"></span></b> HOURS</p>
+                <p class="font-italic"><b><span id="minutes-{{ ap.id }}"></span></b> MINUTES</p>
+                <p class="font-italic"><b><span id="seconds-{{ ap.id }}"></span></b> SECONDS</p>
+                
+              </div>
+                  </div>
+                  <h3></h3>
+              </div>
+              <div class="col-lg-6 order-1 text-right">
+                <img src="{{ ap.main_image.url }}" class="img-fluid itemopp7 item-box"></img>
+              </div>
+            </div>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+    </section>
+
+
+    <section id="contact" class="contact">
+      <div class="container">
+    
+          <div class="section-title" data-aos="zoom-out">
+              <h2>Instructions</h2>
+              <p>Contact us to Bid</p>
+          </div>
+    
+          
+    
+           <!-- Slide 1 -->
+           
+               
+                   <p class=""><b>Contact us via Email or Call us and we'll guide you through the application process.</b></p>
+                   <!-- <a href="#contact" class="btn-get-started scrollto">Our Newsletter</a> -->
+               
+    
+    
+    <section></section>
+    
+            
+          <div class="row gy-4">
+         
+    
+              <!-- <div class="col-lg-12" data-aos="fade-right"> -->
+    
+                <!-- <div class="info"> -->
+    
+               
+    
+                   <div class='col-lg-4'>
+                  <div class="address info">
+                      <i class="bi bi-person"></i>
+                       <h4>Derek Fox</h4>
+                       <p>AUCTION BOYS SPECIALIST</p>
+                  </div>
+               </div>
+    
+               <div class='col-lg-4'>
+                  <div class="email info">
+                      <i class="bi bi-envelope"></i>
+                      <h4>Email</h4>
+                      <p>help@auction-boys.co.za</p>
+                  </div>
+               </div>
+    
+               <div class='col-lg-4'>
+                  <div class="phone info">
+                      <i class="bi bi-phone"></i>
+                      <h4>Call</h4>
+                      
+                      <p>Derek Fox: 082 886 0651</p>
+                  </div>
+               </div>
+                  
+                  
+    
+              <!-- </div> -->
+    
+              <!-- </div> -->
+          
+    
+              <!-- <div class="col-lg-8 mt-5 mt-lg-0" data-aos="fade-left"> -->
+    
+                <!-- <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                    <div class="row">
+                     <p>Fill in your details below and we'll be in touch.</p>
+                        <div class="col-md-2 form-group">
+                            <input type="text" name="name" class="form-control" id="name" placeholder="Name" required>
+                        </div>
+                        <div class="col-md-2 form-group">
+                          <input type="text" name="name" class="form-control" id="name" placeholder="Surname" required>
+                      </div>
+                        <div class="col-md-4 form-group mt-3 mt-md-0">
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
+                        </div>
+                        <div class="col-md-4 form-group mt-3 mt-md-0">
+                          <input type="location" class="form-control" name="location" id="location" placeholder="Location" required>
+                      </div>
+                    </div>
+                    <div class="form-group mt-3">
+                        <textarea class="form-control" name="message" rows="6" placeholder="Message (Optional)" ></textarea>
+                    </div>
+                    <div class="my-3">
+                        <div class="loading">Loading</div>
+                        <div class="error-message"></div>
+                        <div class="sent-message">Your message has been sent. Thank you!</div>
+                    </div>
+                    <div class="text-center"><button type="submit">Submit</button></div>
+                </form> -->
+    
+              <!-- </div> -->
+    
+          </div>
+          <!-- <section></section> -->
+    
+          
+    
+          <!-- <div class='col-lg-3'>
+           <div class="info">
+               <h4></h4>
+               <p>1. Contact us for information regarding your registration process.</p>
+               <p></p>
+               <p>2. Wait for us to come back to you with your Sign In credentials.</p>
+           </div>
+       </div> -->
+    
+      </div>
+    </section>
+    
+    <script>meh("{{ ap.id }}", "{{ ap.id }}", "{{ ap.id }}", "{{ ap.id }}")</script>
+{% endfor %} 
+
+ {% comment %} HTML ENDS HERE------------------------- {% endcomment %}
+{% endblock %}

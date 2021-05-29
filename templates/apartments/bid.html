@@ -1,0 +1,751 @@
+{% extends 'base.html' %}
+
+ {% load static %}
+ 
+ {% block content %}
+{% comment %} HTML STARTS HERE------------------------- {% endcomment %}
+
+
+
+    <section id="hero" class="d-flex flex-column justify-content-end align-items-center">
+        <div id="heroCarousel" data-bs-interval="5000" class="container carousel carousel-fade" data-bs-ride="carousel">
+
+            <div class="carousel-item active">
+                <div class="carousel-container-2 hero-image">
+                    <!-- <h2 class="animate__animated animate__fadeInDown"><span>Sectional Industrial Properties</span></h2>
+                    <p class="animate__animated fanimate__adeInUp">Don’t miss the opportunity to find your perfect home. Sign up to our weekly newsletter to see what properties are going on auction.</p>
+                    <a href="#features" class="btn-get-started animate__animated animate__fadeInUp scrollto">View Listings</a> -->
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
+      <defs>
+        <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z">
+      </defs>
+      <g class="wave1">
+        <use xlink:href="#wave-path" x="50" y="3" fill="rgba(255,255,255, .1)">
+      </g>
+      <g class="wave2">
+        <use xlink:href="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)">
+      </g>
+      <g class="wave3">
+        <use xlink:href="#wave-path" x="50" y="9" fill="#fff">
+      </g>
+    </svg>
+
+    </section>
+
+    
+<!-- <section id="services" class="services">
+      <div class="container">
+
+        <div class="section-title" data-aos="zoom-out">
+          <h2>Land Opportunities</h2>
+          <p>Next in line</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mt-5 mt-lg-0">
+            <div class="portfolio-item icon-box">
+              <div class="icon"><i style="color: #4680ff;"></i></div>
+              <div class="portfolio-img">
+                    <div id='itembru' class="portfolio-img"><span class="advanced">Commercial</span><img src="{% static  '/img/house10.jpg' %}" class="img-fluid itembru"></img></div>
+                 <div class="portfolio-info">
+                    <h4 class="title"><a>Guguletho - 88 Main str</a></h4>
+                    <p class="description">AUCTION DATE: <b>05-04-2021</b></p>
+                    <p class="description">AUCTION START TIME: <b>17:00</b></p>
+                    
+                    <a href="assets/img/house10.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Guguletho - 88 Main Rd"><i class="bx bx-plus"></i></a>
+                    <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+                
+                
+              </div>
+            </div>
+            
+          </div>
+          <div class="col-lg-4 col-md-6 mt-5 mt-lg-0">
+            <div class="icon-box" data-aos-delay="100">
+              <div class="icon"><i  style="color: #e9bf06;"></i></div>
+              <div  class="portfolio-img "><span class="advanced">Residential</span><img src="{% static  '/img/house11.jpg' %}" class="img-fluid itembru"></img></div>
+                <h4 class="title"><a>Guguletho - 88 Main str</a></h4>
+                <p class="description">AUCTION DATE: <b>05-04-2021</b></p>
+                <p class="description">AUCTION START TIME: <b>17:00</b></p>
+
+                <a href="{% static  '/img/portfolio/portfolio-4.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Guguletho - 88 Main Rd"><i class="bx bx-plus"></i></a>
+                    <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mt-5 mt-lg-0 ">
+            <div class="icon-box" data-aos-delay="200">
+              <div class="icon"><i style="color: #3fcdc7;"></i></div>
+              <div class="portfolio-img "><span class="advanced">Residential</span><img src="{% static  '/img/house12.jpg' %}" class="img-fluid itembru"></img></div>
+              
+              <h4 class="title"><a>Guguletho - 88 Main str</a></h4>
+              <p class="description">AUCTION DATE: <b>05-04-2021</b></p>
+              <p class="description">AUCTION START TIME: <b>17:00</b></p>
+
+              <a href="{% static  '/img/portfolio/portfolio-4.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Guguletho - 88 Main Rd"><i class="bx bx-plus"></i></a>
+                    <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+      </div>
+    </section>
+
+<section>
+    <div class="container">
+        <div class="section-title" data-aos="zoom-out">
+          <h2>Industrial Opportunities</h2>
+          <p>Sectional Insustrial Properties going on auction</p>
+        </div>
+    </div> -->
+
+    
+
+
+
+    <!-- <section id="features" class="features"></a>
+
+    
+      <a href="/sectional_industrial_properties/{{ sip.id }}/"><div id="portfolio-details" class="container portfolio-details portfolio-item">
+      
+        <div class="tab-content" data-aos="fade-up">
+        
+          <div class="tab-pane active show" id="tab-1">
+          
+            <div class="row">
+
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 portfolio-info">
+              
+               <h3><b>Auction Starts in:</b></h3>
+                        <p class="font-italic"><b>1</b> DAYS <b>3</b> HOURS <b>24</b> MINUTES <b>1</b> SECONDS</p>
+
+                <h3><b class='section-title'>{{ sip.town_or_city }}, {{ sip.province }} </b></h3>
+                
+                <ul>
+                  <li><strong>AUCTION DATE:</strong> {{sip.auction_date.date}}</b></li>
+                  <li><strong>AUCTION START TIME:</strong> {{sip.auction_date.time}}</li>
+                  <li><strong>START PRICE:</strong> R {{ sip.start_price }}</li>
+                  
+                  
+                    <div class="section-title">
+                      
+                    </div>
+                  
+                  
+                        
+                
+              </div>
+              <div class="col-lg-6 order-1 text-center">
+                <img src="{{ sip.main_image.url }}" class="img-fluid itemopp3 item-box"></img>
+              </div>
+      </div></a>
+    </section> -->
+    
+    
+<!-- <section>
+<div class="container">
+  <div class="section-title" data-aos="zoom-out">
+    <h2>LIVE AUCTION</h2>
+    {% for sip in sectional_industrial_properties %}
+    <p>{{ sip.town_or_city }}, {{ sip.province }}</p>
+    {% endfor %}  
+  </div>
+</div>
+</section> -->
+
+<section id="portfolio-details" class="portfolio-details">
+  <div class="container">
+
+    <div class="row gy-4">
+      <div class="col-lg-12">
+
+        <section id="pricing" class="pricing-1">
+          <div class="container">
+
+            <div class="row">
+
+                <div class="col-lg-12">
+                    <div class="box" data-aos="zoom-in">
+
+                      <h4>{{ apartment.street_address }}, {{ apartment.town_or_city }}, {{ apartment.province }}</h4>
+                        <h4 class='boet'><span>BIDDING DEPOSIT REQUIRED: R 30, END DATE: {{ apartment.auction_date.date }}</span></h4>
+                        
+                        <ul>
+                            <li>START PRICE: R {{ apartment.start_price}}</li>
+                        
+                            
+                        </ul>
+                        <!-- <div class="btn-wrap">
+                            <a href="" class="btn-buy">Apply</a>
+                        </div> -->
+                    </div>
+                </div>
+        </section>
+
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+    <div class="row gy-4">
+      <div class="col-lg-4">
+        <div class="row gy-4">
+          <div class="col-lg-12">
+    
+            <section id="pricing" class="pricing-2">
+              <div class="container">
+    
+                <div class="row">
+    
+                    <div class="col-lg-12">
+                        <div class="box" data-aos="zoom-in">
+                          
+                            <h4>AUCTION ENDS IN:</h4>
+                            <h1>1 MIN 52 SEC</h1>
+                            <h4>CURRENT HIGHEST BID:</h4>
+                            <h1> R{{max_price}} </h1>
+
+                            <!-- <ul>
+                              <h4><span>BIDDING DEPOSIT REQUIRED: £2</span></h4>
+                                <h4><span>END DATE: 03/04/2021 20:35:20</span></h4>
+                          
+                              
+                          </ul> -->
+                            
+                            
+                              <ul><li><h4><span>YOUR BID:</span></h4></li></ul>
+                            <ul>
+                              <div class='row'>
+                              <div class='col-lg-3'>
+                                <li>
+                                  {% comment %} <div class="btn-wrap-1">
+                                    <!-- <a href="#" class="btn-buy-1">-</a> -->
+                                    <button class="btn-buy-1" onclick="decrement()">-</button>
+
+                                    <!-- <input id=demoInput type=number> -->
+                                  <!-- <button onclick="increment()">+</button> -->
+                                  <!-- <button onclick="decrement()">-</button> -->
+                                  <script>
+                                      function increment() {
+                                          document.getElementById('demoInput').stepUp();
+                                      }
+                                      function decrement() {
+                                          document.getElementById('demoInput').stepDown();
+                                      }
+                                  </script>
+                                  
+
+                                  </div> {% endcomment %}
+                                </li>
+                              </div>
+                              <div class='col-lg-6'>
+                                <!-- <li><h4>R 504 000</h4></li> -->
+                                <!-- {% csrf_token %} -->
+                                <!-- <table border='1'>
+                                    {{ form }}
+                                </table>   -->
+                                
+                                  <!-- <input id=demoInput type=number min=100 max=110>
+                                  <button onclick="increment()">+</button>
+                                  <button onclick="decrement()">-</button>
+                                  <script>
+                                      function increment() {
+                                          document.getElementById('demoInput').stepUp();
+                                      }
+                                      function decrement() {
+                                          document.getElementById('demoInput').stepDown();
+                                      }
+                                  </script> -->
+                                
+                                {% comment %} {% for field in form.visible_fields %}
+                                <div class="form-group">
+                                    
+                                    {{ field }}
+                                    {% if field.help_text %}
+                                    <small class="form-text text-muted">{{ field.help_text }}</small>
+                                     {% endif %}
+                                </div>
+                                {% endfor %}  {% endcomment %}
+                                
+                                    <!-- <ul>
+                                        {{form.as_p}}
+                                        {% csrf_token %}
+                                    </ul> -->
+
+
+                                {% if request.user.is_authenticated %}
+                                  <form method='POST'>
+
+                                    {% comment %} <input id=demoInput type=number value="504000"> {% endcomment %}
+                                    <input type="number" name="price" required="" id="id_price", min='{{ min }}'>
+                                    {% csrf_token %}
+                                  
+                                  
+                                    <ul><li><h4><span></span></h4></li></ul>
+                                   
+                                      <!-- <a href="" class="btn-buy-2">PLACE INSTANT BID</a> -->
+                                      <input class='btn-buy-2' type='submit', value="PLACE BID">
+                                  
+
+                                  </form>
+                                {% else %}
+                                
+                                <div class="btn-wrap-1">
+                                <li><a class="btn-buy scrollto" href="#contact">Register</a></li>
+                              </div>
+
+                              <div class="btn-wrap-1">
+                                <li><a class="btn-buy scrollto" href={% url 'login' %}>Login</a></li>
+                              </div>
+                                {% endif %}
+                                
+
+                              </div>
+                              <div class='col-lg-3'>
+                                <li>
+                                  {% comment %} <div class="btn-wrap-1">
+                                    <!-- <a href="#" class="btn-buy-1">+</a> -->
+                                    <button class="btn-buy-1" onclick="increment()">+</button>
+                                  </div> {% endcomment %}
+                                </li>
+                              </div>
+                            </div>
+                            </ul>
+                            <!-- <ul><li><h4><span>ADD IN INCREMENTS OF:</span></h4></li></ul> -->
+                            {% comment %} <div class="btn-wrap-2">
+                              <a href="#" class="btn-buy">R 5 000</a>
+                              <a href="#" class="btn-buy">R 10 000</a>
+                            </div> {% endcomment %}
+                            
+                            <ul><li><h4><span></span></h4></li></ul>
+                            <div class="btn-wrap-1">
+                              <!-- <a href="" class="btn-buy-2">PLACE INSTANT BID</a> -->
+                              
+                          </div>
+                          <ul><li></li></ul>
+                          <ul><li></li></ul>
+                          <h3>
+                        
+                          <div class='col-lg-12'>
+                                <p>RECENT BIDS:</p>
+                          </div>
+                          
+                          </h3>
+                          <ul>
+                          <li>
+                            <h4><span>
+                            <div class='row'>
+                              <div class='col-lg-4'>
+                                    <p></p>
+                              </div>
+                              <div class='col-lg-4'>
+                                <p><b>{% for bid in top %}
+                                  <p> R{{bid}}</p>
+                                  {% endfor %}</b></p>
+                          </div>
+                          <div class='col-lg-4'>
+                            <p></p>
+                      </div>
+                            </div>
+                          </span>
+                          </li></h4>
+                        </ul>
+                        
+                        <div class="btn-wrap-5">
+                          <a href="https://www.youtube.com/watch?v=Ga_HdfGNNW0&list=PLJtBOMhkinrk8mW2KYuHnrc0crDlq5sM3" class="btn-buy-5"><i class="bi bi-play-btn-fill"> Guide</i></a>
+                          
+                          
+                        </div>
+
+
+
+
+
+                        </div>
+
+                        
+                        
+                        
+                        
+
+                    </div>
+            </section>
+    
+          </div>
+        </div>
+
+        
+        <!-- <div class="portfolio-info">
+          
+            
+
+          <h3>BIDDING CLOSES IN:</h3>
+          <ul>
+            <p class="font-italic"><b>24</b> MINUTES <b>1</b> SECONDS</p>
+          </ul>
+          <h3>HIGHEST BID:</h3>
+          <ul>
+            <p class="font-italic"><b>R 3 000 000</b></p>
+          </ul>
+          <h3>Property Information</h3>
+          <ul>
+            <p class="font-italic"><b>24</b> MINUTES <b>1</b> SECONDS</p>
+          </ul>
+          <h3>Property Information</h3>
+          <ul>
+            <p class="font-italic"><b>24</b> MINUTES <b>1</b> SECONDS</p>
+            
+            
+
+          </ul>
+          
+          </ul>
+        </div> -->
+        
+      </div>
+
+
+    
+
+      <div class="col-lg-8">
+        <div class='row'>
+          <div class='col-lg-12'>
+            <div class="portfolio-details-slider swiper-container">
+          <div class="swiper-wrapper align-items-center">
+            
+            {% for ap in apartment.extra_images_apartment_set.all %}
+            <div class="swiper-slide">
+                <img class="itemopp2" src="{{ ap.img.url }}" alt="Girl in a jacket">
+            </div>
+                {% endfor %} 
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+
+
+      <section id="pricing" class="pricing-1">
+        <div class="container">
+
+          <div class="row">
+
+              <div class="col-lg-12">
+                  <div class="box" data-aos="zoom-in">
+
+                    <!-- <h4>Contacts:</h4> -->
+
+                      <div class='row'>
+                        <div class='col-lg-3'>
+                          <div class="info">
+                            <div class="address">
+                                <i class="bi bi-geo-alt"></i>
+                                <h4>Location:</h4>
+                                <p>{{ apartment.street_address }}, {{ apartment.town_or_city }}, {{ apartment.province }}</p>
+                            </div>
+
+                            
+                                
+                        </div>
+                        </div>
+                        
+
+                        <div class='col-lg-3'>
+                          <div class="info">
+                            
+
+                            <div class="email">
+                                <i class="bi bi-envelope"></i>
+                                <h4>Email:</h4>
+                                <p>help@auction-boys.co.za</p>
+                            </div>
+
+                            
+                                
+                        </div>
+                        </div>
+
+                        <div class='col-lg-3'>
+                          <div class="info">
+                            
+
+                            <div class="phone">
+                                <i class="bi bi-phone"></i>
+                                <h4>Call:</h4>
+                                <p>082 886 0651</p>
+                            </div>
+                                
+                        </div>
+                        </div>
+
+
+                        <div class='col-lg-3'>
+                          <div class="info">
+                            
+
+                            <div class="email">
+                
+                                <!-- <i class="bi bi-person"></i>
+                                <h4>Agent:</h4> -->
+                                <img class="itemopp5" src="{% static  '/img/team/team-1.jpg' %}">
+                                <p><b>Derek Fox</b></p>
+                            </div>
+
+                            
+                                
+                        </div>
+                        </div>
+                      
+                      </div>
+
+                      
+
+                      <!-- <h4><span>BIDDING DEPOSIT REQUIRED: £2, END DATE: 03/04/2021 20:35:20</span></h4> -->
+                      
+                      <!-- <ul>
+                          <li>BEGIN PRICE: R 500 000</li>
+                      
+                          
+                      </ul> -->
+                      <h4></h4>
+                      
+                      <div class="btn-wrap-1">
+                          <a href="../{{ ap.id }}" class="btn-buy">PROPERTY DETAILS</a>
+                      </div>
+                  </div>
+              </div>
+      </section>
+
+      
+
+      </div>
+
+      </div>
+
+      
+
+  </div>
+</section><!-- End Portfolio Details Section -->
+
+
+<!-- <section>
+  <div class="container">
+      <div class="section-title" data-aos="zoom-out">
+        <h2>LIVE AUTION</h2>
+        <p>Property Summary</p>
+      </div>
+  </div>
+</section> -->
+
+
+
+
+<section id="portfolio-details" class="portfolio-details">
+  <div class="container">
+    <div class="portfolio-info">
+        <h3>Property Summary</h3>
+        <li>This sale will be SUBJECT TO CONFIRMATION by the parties involved</li>
+        <li>4 Bedroom family home with a 60m2 flatlet</li>
+        <li>Erf nr 10359 Strand</li>
+        <li>Erf extent 660m2</li>
+
+        <h3>Terms and Conditions</h3>
+        <p><b>Buyers are strongly advised to read these terms and conditions, and check the Special Conditions and any applicable Addendum, prior to bidding on a Lot. Additional costs, charges and encumbrances may apply for Buyers once they have made a successful bid in relation to a property.</b></p>
+
+        
+        <p><b>*</b>The reserve price is the minimum price at which the property can be sold at auction.</p>
+        <p><b>*</b>Where a guide price (or range of prices) is given, that guide is the minimum price at which, or range of prices within which, the seller may be prepared to sell on the date on which the guide price, or range of prices, is published. The sale price, whether prior to or at the auction, can be above or below the guide price depending upon market activity. Auction Boys and the seller accept no responsibility for any losses, costs or damages incurred by a buyer as a result of relying on any guide price. The buyer must decide how much they should bid for any Lot. All guide prices are quoted subject to contract. Guide prices given by Auction Boys or the seller cannot be accepted by the buyer as being a professional valuation for any purpose in accordance with the requirements or guidance notes of relevant professional bodies or other authorities.</b></p>
+        <p><b>*</b>Both the guide price and the reserve price may be subject to change up to and including the day of the auction. Whilst every effort is made to ensure that these guides are not misleading, it is possible that the reserve price set for any Lot may exceed the previously quoted guide price (as the seller may fix the final reserve price just before bidding commences).</b></p>
+        <p><b>*</b>The guide price for the Lot does not include the administration fee of R15 000 (inclusive of VAT) charged by Auction Boys. In the case of a joint agent this administration fee will be R30 000 (exclusive of VAT). In addition, the guide price does not include VAT on the sale price, or any additional costs, charges or encumbrances that might apply to some Lots and/or some buyers. The Special Conditions of Sale of the seller, and any applicable Addendum, will state if there are other costs, charges or encumbrances and whether the seller has elected to charge VAT on the sale price.</b></p>
+        <p><b>*</b>To participate in the sale Auction Boys must hold a minimum amount from all bidders. This participation amount is fully refundable in the event that you are not the successful purchaser. For example, a participation fee of R70 000 comprises R60 000 relating to your bidder security (partial deposit payment) and an administration fee of R17 000 inc. VAT payable directly to Auction Boys. A higher participation amount may be payable depending on the reserve price of the Lot.
+          </b></p>
+        <p><b>*</b>Please note that Lots may be sold or withdrawn prior to auction.</b></p>
+        <p><b>*</b>No information, statement, description, quantity or measurement contained in any sales particulars or given orally or contained in any webpage, brochure, catalogue, email, letter, report, docket or hand out issued by or on behalf of Auction Boys or the seller in respect of the property shall constitute a representation or a condition or a warranty on behalf of Auction Boys or the seller. Any information, statement, description, quantity or measurement so given or contained in any such sales particulars, webpage, brochure, catalogue, email, letter, report or hand out issued by or on behalf of Auction Boys or the seller are for illustration purposes only and are not to be taken as matters of fact. Any mistake, omission, inaccuracy or mis-description given orally or contained in any sales particulars, webpage, brochure, catalogue, email, letter, report or hand out issued by or on behalf of Auction Boys or the seller shall not give rise to any right of action, claim, entitlement or compensation against Auction Boys or the seller. All bidders must satisfy themselves by carrying out their own independent due diligence, inspections or otherwise as to the correctness of any and all of the information, statements, descriptions, quantity or measurements contained in any such sales particulars, webpage, brochure, catalogue, email, letter, report or hand out issued by or on behalf of Auction Boys or the seller.</b></p>
+
+
+        
+        
+        <!-- <h3>Location</h3>
+        <li>Erf 10359 Goede Hoop Strand</li>
+        <li>Close to Somerset Mall, The Sanctuary, Primary and High Schools</li>
+        <li>Busamed Hospital</li>
+        <li>Very close to Boland College (300m).</li>
+
+        <h3>Description</h3>
+        <li>A residential property comprises the main house, one apartment and one games room/private home office (each with a separate entrance)</li>
+        <li>Master bedroom with en-suite full bathroom.</li>
+        <li>Three other bedrooms</li>
+        <li>Separate full bathroom</li>
+        <li>Formal lounge</li>
+        <li>Large open-plan living room/dining room/kitchen/utility area</li>
+        <li>APARTMENT UPSTAIRS:</li>
+        <li>Store room</li>
+        <li>TV Lounge</li>
+        <li>Kitchen</li>
+        <li>Bedroom with en-suite full bathroom</li>
+        <li>GAMES ROOM/HOME OFFICE:</li>
+        <li>Boardroom</li>
+        <li>Large open-plan office</li>
+        <li>Kitchenette</li>
+        <li>Toilet</li>
+        <li>It can easily be converted into a separate apartment with minor changes.</li>
+        <li>Double garage (36m2) with under-cover parking for up to two small cars.</li>
+        <li>Both apartments can possibly be rented out for additional income.</li>
+        <li>All rooms are extremely spacious.</li>
+        <li>Property is securely fenced in.</li>
+        <li><b>Buyers Commission of 5% plus VAT will be applicable</b></li>
+        <li><b>Please note: All legal documents can be viewed by clicking on the ‘Legals’ tab above, in order for you to carry out due diligence in relation to the property. By doing so, this will also then ensure that you are continuously updated regarding any pricing changes on the property before the auction.</b></li>
+
+        <h3>Zoning</h3>
+        <p>Single residential</p>
+
+        <h3>VAT</h3>
+        <p>Please refer to documents.</p>
+
+        <p></p>
+        <p>No information, statement, description, quantity or measurement contained in any sales particulars or given orally or contained in any webpage, brochure, catalogue, email, letter, report, docket or hand out issued by or on behalf of Auction Boys or the vendor in respect of the property shall constitute a representation or a condition or a warranty on behalf of Auction Boys or the vendor. Any information, statement, description, quantity or measurement so given or contained in any such sales particulars, webpage, brochure, catalogue, email, letter, report or hand out issued by or on behalf of Auction Boys or the vendor are for illustration purposes only and are not to be taken as matters of fact. Any mistake, omission, inaccuracy or mis-description given orally or contained in any sales particulars, webpage, brochure, catalogue, email, letter, report or hand out issued by or on behalf of Auction Boys or the vendor shall not give rise to any right of action, claim, entitlement or compensation against Auction Boys or the vendor. All bidders must satisfy themselves by carrying out their own independent due diligence, inspections or otherwise as to the correctness of any and all of the information, statements, descriptions, quantity or measurements contained in any such sales particulars, webpage, brochure, catalogue, email, letter, report or hand out issued by or on behalf of Auction Boys or the vendor.</p>
+
+        -->
+    </div>
+  </div>
+
+</section>
+
+
+<section id="contact" class="contact">
+  <div class="container">
+
+      <div class="section-title" data-aos="zoom-out">
+          <h2>Instructions</h2>
+          <p>Contact us to Bid</p>
+      </div>
+
+      
+
+       <!-- Slide 1 -->
+       
+           
+               <p class=""><b>Contact us via Email or Call us and we'll guide you through the application process.</b></p>
+               <!-- <a href="#contact" class="btn-get-started scrollto">Our Newsletter</a> -->
+           
+
+
+<section></section>
+
+        
+      <div class="row gy-4">
+     
+
+          <!-- <div class="col-lg-12" data-aos="fade-right"> -->
+
+            <!-- <div class="info"> -->
+
+           
+
+               <div class='col-lg-4'>
+              <div class="address info">
+                  <i class="bi bi-person"></i>
+                   <h4>Derek Fox</h4>
+                   <p>AUCTION BOYS SPECIALIST</p>
+              </div>
+           </div>
+
+           <div class='col-lg-4'>
+              <div class="email info">
+                  <i class="bi bi-envelope"></i>
+                  <h4>Email</h4>
+                  <p>help@auction-boys.co.za</p>
+              </div>
+           </div>
+
+           <div class='col-lg-4'>
+              <div class="phone info">
+                  <i class="bi bi-phone"></i>
+                  <h4>Call</h4>
+                  
+                  <p>Derek Fox: 082 886 0651</p>
+              </div>
+           </div>
+              
+              
+
+          <!-- </div> -->
+
+          <!-- </div> -->
+      
+
+          <!-- <div class="col-lg-8 mt-5 mt-lg-0" data-aos="fade-left"> -->
+
+            <!-- <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                <div class="row">
+                 <p>Fill in your details below and we'll be in touch.</p>
+                    <div class="col-md-2 form-group">
+                        <input type="text" name="name" class="form-control" id="name" placeholder="Name" required>
+                    </div>
+                    <div class="col-md-2 form-group">
+                      <input type="text" name="name" class="form-control" id="name" placeholder="Surname" required>
+                  </div>
+                    <div class="col-md-4 form-group mt-3 mt-md-0">
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
+                    </div>
+                    <div class="col-md-4 form-group mt-3 mt-md-0">
+                      <input type="location" class="form-control" name="location" id="location" placeholder="Location" required>
+                  </div>
+                </div>
+                <div class="form-group mt-3">
+                    <textarea class="form-control" name="message" rows="6" placeholder="Message (Optional)" ></textarea>
+                </div>
+                <div class="my-3">
+                    <div class="loading">Loading</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">Your message has been sent. Thank you!</div>
+                </div>
+                <div class="text-center"><button type="submit">Submit</button></div>
+            </form> -->
+
+          <!-- </div> -->
+
+      </div>
+      <!-- <section></section> -->
+
+      
+
+      <!-- <div class='col-lg-3'>
+       <div class="info">
+           <h4></h4>
+           <p>1. Contact us for information regarding your registration process.</p>
+           <p></p>
+           <p>2. Wait for us to come back to you with your Sign In credentials.</p>
+       </div>
+   </div> -->
+
+  </div>
+</section>
+
+<script>
+setTimeout(function() {
+  location.reload();
+}, 30000);
+</script>
+
+
+ {% comment %} HTML ENDS HERE------------------------- {% endcomment %}
+{% endblock %}
+
+
+
+
+
+

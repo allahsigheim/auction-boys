@@ -1,0 +1,185 @@
+{% extends 'base.html' %}
+
+{% block title %}Login{% endblock %}
+
+{% block content %}
+
+
+<section id="hero" class="d-flex flex-column justify-content-end align-items-center">
+  <div id="heroCarousel" data-bs-interval="5000" class="container carousel carousel-fade" data-bs-ride="carousel">
+
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+          <div class="carousel-container-2">
+              <h2 class="animate__animated animate__fadeInDown"></h2>
+              <p class="animate__animated fanimate__adeInUp"></p>
+          </div>
+      </div>
+
+
+
+  </div>
+
+  <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
+<defs>
+  <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z">
+</defs>
+<g class="wave1">
+  <use xlink:href="#wave-path" x="50" y="3" fill="rgba(255,255,255, .1)">
+</g>
+<g class="wave2">
+  <use xlink:href="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)">
+</g>
+<g class="wave3">
+  <use xlink:href="#wave-path" x="50" y="9" fill="#fff">
+</g>
+</svg>
+
+</section>
+<!-- End Hero -->
+<div class='container'>
+  <div class="login-page-5">
+    <div class="form-5">
+      <!-- <form class="register-form-5" id="reg" >
+        <input type="text" placeholder="Username"/>
+        <input type="password" placeholder="Password"/>
+        <input type="text" placeholder="Email"/>
+        <button>Sign Up</button>
+        <p class="message">Already registered? <a href="#">Sign In</a></p>
+      </form> -->
+      <form class="login-form-5" method="post">
+        <!-- <h2>Login</h2> -->
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Login</button>
+        <ul></ul>
+        <!-- <p class="message">Not registered? <a href="#"></a></p>
+        <ul></ul>
+        <button href='#contact'>Register</button> -->
+        
+        <p class="message">Not registered? <a href="#contact">Create an account</a></p>
+      </form>
+    </div>
+  </div>
+</div>
+
+<section id="contact" class="contact">
+  <div class="container">
+
+      <div class="section-title" data-aos="zoom-out">
+          <h2>Instructions</h2>
+          <p>Contact us to Bid</p>
+      </div>
+
+      
+
+       <!-- Slide 1 -->
+       
+           
+               <p class=""><b>Contact us via Email or Call us and we'll guide you through the application process.</b></p>
+               <!-- <a href="#contact" class="btn-get-started scrollto">Our Newsletter</a> -->
+           
+
+
+<section></section>
+
+        
+      <div class="row gy-4">
+     
+
+          <!-- <div class="col-lg-12" data-aos="fade-right"> -->
+
+            <!-- <div class="info"> -->
+
+           
+
+               <div class='col-lg-4'>
+              <div class="address info">
+                  <i class="bi bi-person"></i>
+                   <h4>Derek Fox</h4>
+                   <p>AUCTION BOYS SPECIALIST</p>
+              </div>
+           </div>
+
+           <div class='col-lg-4'>
+              <div class="email info">
+                  <i class="bi bi-envelope"></i>
+                  <h4>Email</h4>
+                  <p>help@auction-boys.co.za</p>
+              </div>
+           </div>
+
+           <div class='col-lg-4'>
+              <div class="phone info">
+                  <i class="bi bi-phone"></i>
+                  <h4>Call</h4>
+                  
+                  <p>Derek Fox: 082 886 0651</p>
+              </div>
+           </div>
+              
+              
+
+          <!-- </div> -->
+
+          <!-- </div> -->
+      
+
+          <!-- <div class="col-lg-8 mt-5 mt-lg-0" data-aos="fade-left"> -->
+
+            <!-- <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                <div class="row">
+                 <p>Fill in your details below and we'll be in touch.</p>
+                    <div class="col-md-2 form-group">
+                        <input type="text" name="name" class="form-control" id="name" placeholder="Name" required>
+                    </div>
+                    <div class="col-md-2 form-group">
+                      <input type="text" name="name" class="form-control" id="name" placeholder="Surname" required>
+                  </div>
+                    <div class="col-md-4 form-group mt-3 mt-md-0">
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
+                    </div>
+                    <div class="col-md-4 form-group mt-3 mt-md-0">
+                      <input type="location" class="form-control" name="location" id="location" placeholder="Location" required>
+                  </div>
+                </div>
+                <div class="form-group mt-3">
+                    <textarea class="form-control" name="message" rows="6" placeholder="Message (Optional)" ></textarea>
+                </div>
+                <div class="my-3">
+                    <div class="loading">Loading</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">Your message has been sent. Thank you!</div>
+                </div>
+                <div class="text-center"><button type="submit">Submit</button></div>
+            </form> -->
+
+          <!-- </div> -->
+
+      </div>
+      <!-- <section></section> -->
+
+      
+
+      <!-- <div class='col-lg-3'>
+       <div class="info">
+           <h4></h4>
+           <p>1. Contact us for information regarding your registration process.</p>
+           <p></p>
+           <p>2. Wait for us to come back to you with your Sign In credentials.</p>
+       </div>
+   </div> -->
+
+  </div>
+</section>
+
+<!-- <h2>Log In</h2>
+<form method="post">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button type="submit">Log In</button>
+</form> -->
+
+
+
+{% endblock %}

@@ -1,0 +1,170 @@
+ {% extends 'base.html' %}
+
+ {% load static %}
+ 
+ {% block content %}
+{% comment %} HTML STARTS HERE------------------------- {% endcomment %}
+
+
+
+    <section id="hero" class="d-flex flex-column justify-content-end align-items-center">
+        <div id="heroCarousel" data-bs-interval="5000" class="container carousel carousel-fade" data-bs-ride="carousel">
+
+            <div class="carousel-item active">
+                <div class="carousel-container-1 hero-image">
+                    <h2 class="animate__animated animate__fadeInDown"><span>Sectional Industrial Properties</span></h2>
+                    <p class="animate__animated fanimate__adeInUp">Don’t miss the opportunity to find your perfect home. Sign up to our weekly newsletter to see what properties are going on auction.</p>
+                    <a href="#features" class="btn-get-started animate__animated animate__fadeInUp scrollto">View Listings</a>
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
+      <defs>
+        <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z">
+      </defs>
+      <g class="wave1">
+        <use xlink:href="#wave-path" x="50" y="3" fill="rgba(255,255,255, .1)">
+      </g>
+      <g class="wave2">
+        <use xlink:href="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)">
+      </g>
+      <g class="wave3">
+        <use xlink:href="#wave-path" x="50" y="9" fill="#fff">
+      </g>
+    </svg>
+
+    </section>
+
+    
+<!-- <section id="services" class="services">
+      <div class="container">
+
+        <div class="section-title" data-aos="zoom-out">
+          <h2>Land Opportunities</h2>
+          <p>Next in line</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mt-5 mt-lg-0">
+            <div class="portfolio-item icon-box">
+              <div class="icon"><i style="color: #4680ff;"></i></div>
+              <div class="portfolio-img">
+                    <div id='itembru' class="portfolio-img"><span class="advanced">Commercial</span><img src="{% static  '/img/house10.jpg' %}" class="img-fluid itembru"></img></div>
+                 <div class="portfolio-info">
+                    <h4 class="title"><a>Guguletho - 88 Main str</a></h4>
+                    <p class="description">AUCTION DATE: <b>05-04-2021</b></p>
+                    <p class="description">AUCTION START TIME: <b>17:00</b></p>
+                    
+                    <a href="assets/img/house10.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Guguletho - 88 Main Rd"><i class="bx bx-plus"></i></a>
+                    <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+                
+                
+              </div>
+            </div>
+            
+          </div>
+          <div class="col-lg-4 col-md-6 mt-5 mt-lg-0">
+            <div class="icon-box" data-aos-delay="100">
+              <div class="icon"><i  style="color: #e9bf06;"></i></div>
+              <div  class="portfolio-img "><span class="advanced">Residential</span><img src="{% static  '/img/house11.jpg' %}" class="img-fluid itembru"></img></div>
+                <h4 class="title"><a>Guguletho - 88 Main str</a></h4>
+                <p class="description">AUCTION DATE: <b>05-04-2021</b></p>
+                <p class="description">AUCTION START TIME: <b>17:00</b></p>
+
+                <a href="{% static  '/img/portfolio/portfolio-4.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Guguletho - 88 Main Rd"><i class="bx bx-plus"></i></a>
+                    <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mt-5 mt-lg-0 ">
+            <div class="icon-box" data-aos-delay="200">
+              <div class="icon"><i style="color: #3fcdc7;"></i></div>
+              <div class="portfolio-img "><span class="advanced">Residential</span><img src="{% static  '/img/house12.jpg' %}" class="img-fluid itembru"></img></div>
+              
+              <h4 class="title"><a>Guguletho - 88 Main str</a></h4>
+              <p class="description">AUCTION DATE: <b>05-04-2021</b></p>
+              <p class="description">AUCTION START TIME: <b>17:00</b></p>
+
+              <a href="{% static  '/img/portfolio/portfolio-4.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Guguletho - 88 Main Rd"><i class="bx bx-plus"></i></a>
+                    <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+      </div>
+    </section> -->
+
+<section>
+    <div class="container">
+        <div class="section-title" data-aos="zoom-out">
+          <h2>Industrial Opportunities</h2>
+          <p>Sectional Insustrial Properties going on auction</p>
+        </div>
+    </div>
+
+    
+
+{% for sip in sectional_industrial_properties %}
+
+    <section id="features" class="features"></a>
+
+    
+      <a href="/sectional_industrial_properties/{{ sip.id }}/"><div id="portfolio-details" class="container portfolio-details portfolio-item">
+      
+        <div class="tab-content" data-aos="fade-up">
+        
+          <div class="tab-pane active show" id="tab-1">
+          
+            <div class="row">
+
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 portfolio-info">
+              
+               <h3><b>Auction Starts in:</b></h3>
+                        <p class="font-italic"><b>1</b> DAYS <b>3</b> HOURS <b>24</b> MINUTES <b>1</b> SECONDS</p>
+
+                <h3><b class='section-title'>{{ sip.town_or_city }}, {{ sip.province }} </b></h3>
+                
+                <ul>
+                  <li><strong>AUCTION DATE:</strong> {{sip.auction_date.date}}</b></li>
+                  <li><strong>AUCTION START TIME:</strong> {{sip.auction_date.time}}</li>
+                  <li><strong>START PRICE:</strong> R {{ sip.start_price }}</li>
+                  
+                  
+                    <div class="section-title">
+                      
+                    </div>
+                  
+                  
+                        
+                
+              </div>
+              <div class="col-lg-6 order-1 text-center">
+                <img src="{{ sip.main_image.url }}" class="img-fluid itemopp3 item-box"></img>
+              </div>
+      </div></a>
+    </section>
+    
+    
+
+      
+
+  </div>
+</section><!-- End Portfolio Details Section -->
+{% endfor %}
+
+<!-- <section>
+  <div class="container">
+      <div class="section-title" data-aos="zoom-out">
+        <h2>LIVE AUTION</h2>
+        <p>Property Summary</p>
+      </div>
+  </div>
+</section> -->
+
+
+ {% comment %} HTML ENDS HERE------------------------- {% endcomment %}
+{% endblock %}

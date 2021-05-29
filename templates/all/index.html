@@ -1,0 +1,368 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+{% comment %} apartments, 
+commercial_properties, 
+houses, 
+industrial_properties, 
+land, 
+sectional_industrial_properties, 
+townhouses,  {% endcomment %}
+
+
+
+<section id="hero" class="d-flex flex-column justify-content-end align-items-center">
+       <div id="heroCarousel" data-bs-interval="5000" class="container carousel carousel-fade" data-bs-ride="carousel">
+
+           <!-- Slide 1 -->
+           <div class="carousel-item active">
+               <div class="carousel-container-1 hero-image">
+                   <h2 class="animate__animated animate__fadeInDown"><span>All Opportunities</span></h2>
+                   <p class="animate__animated fanimate__adeInUp">Don’t miss the opportunity to find your perfect home. Sign up to our weekly newsletter to see what properties are going on auction.</p>
+                   <a href="#features" class="btn-get-started animate__animated animate__fadeInUp scrollto">View Listings</a>
+               </div>
+           </div>
+
+
+
+       </div>
+
+       <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
+     <defs>
+       <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z">
+     </defs>
+     <g class="wave1">
+       <use xlink:href="#wave-path" x="50" y="3" fill="rgba(255,255,255, .1)">
+     </g>
+     <g class="wave2">
+       <use xlink:href="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)">
+     </g>
+     <g class="wave3">
+       <use xlink:href="#wave-path" x="50" y="9" fill="#fff">
+     </g>
+   </svg>
+
+   </section>
+
+
+<section>
+   <div class="container">
+       <div class="section-title" data-aos="zoom-out">
+         <h2>All Opportunities</h2>
+         <p>Upcoming Auctions</p>
+       </div>
+   </div><!-- End Container -->>
+
+   
+
+{% for ap in apartments %}
+
+<section id="features" class="features"></a>
+
+    
+  <a href="/apartments/{{ ap.id }}/"><div id="portfolio-details" class="container portfolio-details portfolio-item">
+  
+    <div class="tab-content" data-aos="fade-up">
+    
+      <div class="tab-pane active show" id="tab-1">
+      
+        <div class="row">
+
+          <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 portfolio-info">
+          
+           <h3><b>Auction Starts in:</b></h3>
+                    <p class="font-italic"><b><span id="days-{{ ap.id }}"></span></b> DAYS <b><span id="hours-{{ ap.id }}"></span></b> HOURS <b><span id="minutes-{{ ap.id }}"></span></b> MINUTES <b><span id="seconds-{{ ap.id }}"></span></b> SECONDS</p>
+
+            <h3><b class='section-title'>{{ ap.town_or_city }}, {{ ap.province }} </b></h3>
+            
+            <ul>
+              <li><strong>AUCTION DATE:</strong> {{ ap.auction_date.date }}</b></li>
+              <li><strong>AUCTION START TIME:</strong> {{ ap.auction_date.time }}</li>
+              <li><strong>START PRICE:</strong> R {{ ap.start_price }}</li>
+              
+              
+                <div class="section-title">
+                  
+                </div>
+              
+              
+                    
+            
+          </div>
+          <div class="col-lg-6 order-1 text-center">
+            <img src="{{ ap.main_image.url }}" class="img-fluid itemopp3 shadow-lg item-box"></img>
+          </div>
+  </div></a>
+</section><!-- End Features Section -->
+<script>meh("{{ ap.id }}", "{{ ap.id }}", "{{ ap.id }}", "{{ ap.id }}")</script>
+   
+{% endfor %} 
+
+
+
+
+{% for com in commercial_properties %}
+
+    <section id="features" class="features"></a>
+      <a href="/commercial_properties/{{ com.id }}/"><div id="portfolio-details" class="container portfolio-details portfolio-item">
+      
+        <div class="tab-content" data-aos="fade-up">
+        
+          <div class="tab-pane active show" id="tab-1">
+          
+            <div class="row">
+
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 portfolio-info">
+              
+               <h3><b>Auction Starts in:</b></h3>
+                        <p class="font-italic"><b>1</b> DAYS <b>3</b> HOURS <b>24</b> MINUTES <b>1</b> SECONDS</p>
+
+                <h3><b class='section-title'>{{ com.town_or_city }}, {{ com.province }} </b></h3>
+                
+                <ul>
+                  <li><strong>AUCTION DATE:</strong> {{com.auction_date.date}}</b></li>
+                  <li><strong>AUCTION START TIME:</strong> {{com.auction_date.time}}</li>
+                  <li><strong>START PRICE:</strong> R {{ com.start_price }}</li>
+                  
+                  
+                    <div class="section-title">
+                      
+                    </div>
+                  
+                  
+                        
+                
+              </div>
+              <div class="col-lg-6 order-1 text-center">
+                <img src="{{ com.main_image.url }}" class="img-fluid itemopp3 item-box"></img>
+              </div>
+      </div></a>
+    </section>
+
+
+{% endfor %} 
+
+
+{% for house in houses %}
+
+    <section id="features" class="features"></a>
+      <a href="/houses/{{ house.id }}/"><div id="portfolio-details" class="container portfolio-details portfolio-item">
+      
+        <div class="tab-content" data-aos="fade-up">
+        
+          <div class="tab-pane active show" id="tab-1">
+          
+            <div class="row">
+
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 portfolio-info">
+              
+               <h3><b>Auction Starts in:</b></h3>
+                        <p class="font-italic"><b>1</b> DAYS <b>3</b> HOURS <b>24</b> MINUTES <b>1</b> SECONDS</p>
+
+                <h3><b class='section-title'>{{ house.town_or_city }}, {{ house.province }} </b></h3>
+                
+                <ul>
+                  <li><strong>AUCTION DATE:</strong> {{house.auction_date.date}}</b></li>
+                  <li><strong>AUCTION START TIME:</strong> {{house.auction_date.time}}</li>
+                  <li><strong>START PRICE:</strong> R {{ house.start_price }}</li>
+                  
+                  
+                    <div class="section-title">
+                      
+                    </div>
+                  
+                  
+                        
+                
+              </div>
+              <div class="col-lg-6 order-1">
+                <img src="{{ house.main_image.url }}" class="img-fluid itemopp3 item-box"></img>
+              </div>
+      </div></a>
+    </section><!-- End Features Section -->
+    
+{% endfor %} 
+
+
+{% for ind in industrial_properties %}
+
+     <section id="features" class="features"></a>
+      <a href="/industrial_properties/{{ ind.id }}/"><div id="portfolio-details" class="container portfolio-details portfolio-item">
+      
+        <div class="tab-content" data-aos="fade-up">
+        
+          <div class="tab-pane active show" id="tab-1">
+          
+            <div class="row">
+
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 portfolio-info">
+              
+               <h3><b>Auction Starts in:</b></h3>
+                        <p class="font-italic"><b><span id="days-{{ ind.id }}"></span></b> DAYS <b><span id="hours-{{ ind.id }}"></span></b> HOURS <b><span id="minutes-{{ ind.id }}"></span></b> MINUTES <b><span id="seconds-{{ ind.id }}"></span></b> SECONDS</p>
+
+                        <!-- sticky_69[jon] — Today at 10:49 AM
+<p><span id="days-{{ ap.id }}"></span> DAYS</p>
+                    <p><span id="hours-{{ ap.id }}"></span> HOURS</p>
+                    <p><span id="minutes-{{ ap.id }}"></span> MINUTES</p>
+                    <p><span id="seconds-{{ ap.id }}"></span> SECONDS</p> -->
+
+                <h3><b class='section-title'>{{ ind.town_or_city }}, {{ ind.province }} </b></h3>
+                
+                <ul>
+                  <li><strong>AUCTION DATE:</strong> {{ind.auction_date.date}}</b></li>
+                  <li><strong>AUCTION START TIME:</strong> {{ind.auction_date.time}}</li>
+                  <li><strong>START PRICE:</strong> R {{ ind.start_price }}</li>
+                  
+                  
+                    <div class="section-title">
+                      
+                    </div>
+                  
+                  
+                        
+                
+              </div>
+              <div class="col-lg-6 order-1 text-center">
+                <img src="{{ ind.main_image.url }}" class="img-fluid itemopp3 item-box"></img>
+              </div>
+      </div></a>
+
+      <script>meh("{{ ind.id }}", "{{ ind.id }}", "{{ ind.id }}", "{{ ind.id }}")</script>
+    </section><!-- End Features Section -->
+
+  
+    
+{% endfor %} 
+
+
+{% for ld in land %}
+
+    <section id="features" class="features"></a>
+
+    
+      <a href="/land/{{ ld.id }}/"><div id="portfolio-details" class="container portfolio-details portfolio-item">
+      
+        <div class="tab-content" data-aos="fade-up">
+        
+          <div class="tab-pane active show" id="tab-1">
+          
+            <div class="row">
+
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 portfolio-info">
+              
+               <h3><b>Auction Starts in:</b></h3>
+                        <p class="font-italic"><b><span id="days-{{ ld.id }}"></span></b> DAYS <b><span id="hours-{{ ld.id }}"></span></b> HOURS <b><span id="minutes-{{ ld.id }}"></span></b> MINUTES <b><span id="seconds-{{ ld.id }}"></span></b> SECONDS</p>
+
+                <h3><b class='section-title'>{{ ld.town_or_city }}, {{ ld.province }} </b></h3>
+                
+                <ul>
+                  <li><strong>AUCTION DATE:</strong> {{ld.auction_date.date}}</b></li>
+                  <li><strong>AUCTION START TIME:</strong> {{ld.auction_date.time}}</li>
+                  <li><strong>START PRICE:</strong> R {{ ld.start_price }}</li>
+                  
+                  
+                    <div class="section-title">
+                      
+                    </div>
+                  
+                  
+                        
+                
+              </div>
+              <div class="col-lg-6 order-1 text-center">
+                <img src="{{ ld.main_image.url }}" class="img-fluid itemopp3 item-box"></img>
+              </div>
+      </div></a>
+    </section><!-- End Features Section -->
+    <script>meh("{{ ld.id }}", "{{ ld.id }}", "{{ ld.id }}", "{{ ld.id }}")</script>
+{% endfor %} 
+
+{% for sip in sectional_industrial_properties %}
+
+    <section id="features" class="features"></a>
+
+    
+      <a href="/sectional_industrial_properties/{{ sip.id }}/"><div id="portfolio-details" class="container portfolio-details portfolio-item">
+      
+        <div class="tab-content" data-aos="fade-up">
+        
+          <div class="tab-pane active show" id="tab-1">
+          
+            <div class="row">
+
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 portfolio-info">
+              
+               <h3><b>Auction Starts in:</b></h3>
+                        <p class="font-italic"><b>1</b> DAYS <b>3</b> HOURS <b>24</b> MINUTES <b>1</b> SECONDS</p>
+
+                <h3><b class='section-title'>{{ sip.town_or_city }}, {{ sip.province }} </b></h3>
+                
+                <ul>
+                  <li><strong>AUCTION DATE:</strong> {{sip.auction_date.date}}</b></li>
+                  <li><strong>AUCTION START TIME:</strong> {{sip.auction_date.time}}</li>
+                  <li><strong>START PRICE:</strong> R {{ sip.start_price }}</li>
+                  
+                  
+                    <div class="section-title">
+                      
+                    </div>
+                  
+                  
+                        
+                
+              </div>
+              <div class="col-lg-6 order-1 text-center">
+                <img src="{{ sip.main_image.url }}" class="img-fluid itemopp3 item-box"></img>
+              </div>
+      </div></a>
+    </section><!-- End Features Section -->
+    
+{% endfor %} 
+
+{% for th in townhouses %}
+
+<section id="features" class="features"></a>
+
+
+  <a href="/townhouses/{{ th.id }}/"><div id="portfolio-details" class="container portfolio-details portfolio-item">
+  
+    <div class="tab-content" data-aos="fade-up">
+    
+      <div class="tab-pane active show" id="tab-1">
+      
+        <div class="row">
+
+          <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 portfolio-info">
+          
+           <h3><b>Auction Starts in:</b></h3>
+                    <p class="font-italic"><b>1</b> DAYS <b>3</b> HOURS <b>24</b> MINUTES <b>1</b> SECONDS</p>
+
+            <h3><b class='section-title'>{{ th.town_or_city }}, {{ th.province }} </b></h3>
+            
+            <ul>
+              <li><strong>AUCTION DATE:</strong> {{th.auction_date.date}}</b></li>
+              <li><strong>AUCTION START TIME:</strong> {{th.auction_date.time}}</li>
+              <li><strong>START PRICE:</strong> R {{ th.start_price }}</li>
+              
+              
+                <div class="section-title">
+                  
+                </div>
+              
+              
+                    
+            
+          </div>
+          <div class="col-lg-6 order-1 text-center">
+            <img src="{{ th.main_image.url }}" class="img-fluid itemopp3 item-box"></img>
+          </div>
+  </div></a>
+</section><!-- End Features Section -->
+
+{% endfor %}
+
+
+{% endblock %}
